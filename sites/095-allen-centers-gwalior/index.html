@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ALLEN Centers Gwalior — Gwalior</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Barlow&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --primary: #001233;
+    --accent: #ff1744;
+    --text: #ffffff;
+    --font: 'Barlow', sans-serif;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: var(--font), sans-serif; color: #222; }
+  
+  /* NAV */
+  nav {
+    position: fixed; top: 0; width: 100%; z-index: 999;
+    background: rgba(0,0,0,0.85); backdrop-filter: blur(10px);
+    padding: 16px 5%; display: flex; justify-content: space-between; align-items: center;
+  }
+  .nav-logo { color: var(--accent); font-size: 1.3rem; font-weight: 800; letter-spacing: 1px; }
+  .nav-links a {
+    color: #fff; text-decoration: none; margin-left: 24px; font-size: 0.9rem;
+    transition: color 0.2s;
+  }
+  .nav-links a:hover { color: var(--accent); }
+  .nav-cta {
+    background: var(--accent); color: #000 !important;
+    padding: 8px 20px; border-radius: 25px; font-weight: 700 !important;
+  }
+  
+  /* HERO */
+  .hero {
+    min-height: 100vh;
+    background: var(--primary);
+    display: flex; align-items: center; justify-content: center;
+    position: relative; overflow: hidden; padding: 100px 5% 60px;
+  }
+  .hero::before {
+    content: '';
+    position: absolute; top: -50%; right: -20%;
+    width: 600px; height: 600px;
+    background: radial-gradient(circle, #ff174433 0%, transparent 70%);
+    animation: pulse 6s ease-in-out infinite;
+  }
+  @keyframes pulse { 0%,100% { transform: scale(1); } 50% { transform: scale(1.2); } }
+  .hero-content { max-width: 700px; z-index: 1; }
+  .hero-badge {
+    display: inline-block; background: #ff174422; border: 1px solid #ff1744;
+    color: var(--accent); padding: 6px 18px; border-radius: 20px;
+    font-size: 0.85rem; font-weight: 600; margin-bottom: 20px; letter-spacing: 2px; text-transform: uppercase;
+  }
+  .hero h1 {
+    font-size: clamp(2.5rem, 6vw, 5rem);
+    color: var(--text); line-height: 1.1; margin-bottom: 16px; font-weight: 900;
+  }
+  .hero h1 span { color: var(--accent); }
+  .hero p {
+    font-size: 1.2rem; color: #ffffffbb; margin-bottom: 36px; line-height: 1.7;
+  }
+  .hero-btns { display: flex; gap: 16px; flex-wrap: wrap; }
+  .btn-primary {
+    background: var(--accent); color: #000; padding: 16px 36px;
+    border-radius: 50px; font-weight: 800; font-size: 1rem;
+    text-decoration: none; transition: all 0.3s; display: inline-block;
+  }
+  .btn-primary:hover { transform: translateY(-3px); box-shadow: 0 10px 30px #ff174466; }
+  .btn-secondary {
+    border: 2px solid #ff1744; color: var(--accent); padding: 14px 34px;
+    border-radius: 50px; font-weight: 700; font-size: 1rem;
+    text-decoration: none; transition: all 0.3s; display: inline-block;
+  }
+  .btn-secondary:hover { background: #ff174422; }
+  
+  /* ABOUT */
+  .about { padding: 100px 5%; background: #fff; }
+  .about-inner { max-width: 1100px; margin: 0 auto; display: grid; grid-template-columns: 1fr 1fr; gap: 60px; align-items: center; }
+  .about-visual {
+    background: linear-gradient(135deg, #001233, #ff174444);
+    border-radius: 20px; height: 350px; display: flex; align-items: center; justify-content: center;
+    font-size: 6rem;
+  }
+  .about-text h2 { font-size: 2.2rem; margin-bottom: 20px; color: #001233; font-weight: 800; }
+  .about-text h2 span { color: ff1744; color: #ff1744; }
+  .about-text p { font-size: 1.05rem; line-height: 1.8; color: #555; margin-bottom: 24px; }
+  .stats { display: flex; gap: 30px; flex-wrap: wrap; }
+  .stat-item { text-align: center; }
+  .stat-num { font-size: 2rem; font-weight: 900; color: #ff1744; }
+  .stat-label { font-size: 0.85rem; color: #888; margin-top: 4px; }
+  
+  /* SERVICES */
+  .services { padding: 100px 5%; background: #0012330d; }
+  .section-header { text-align: center; margin-bottom: 60px; }
+  .section-header h2 { font-size: 2.5rem; font-weight: 800; color: #1a1a1a; margin-bottom: 12px; }
+  .section-header h2 span { color: #ff1744; }
+  .section-header p { color: #666; font-size: 1.05rem; }
+  .services-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 24px; max-width: 1100px; margin: 0 auto; }
+  .service-card {
+    background: #fff; border-radius: 16px; padding: 32px 24px; text-align: center;
+    border: 1px solid #f0f0f0; transition: all 0.3s; box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+  }
+  .service-card:hover { transform: translateY(-6px); box-shadow: 0 12px 40px #ff174422; border-color: #ff174444; }
+  .service-icon { font-size: 2.5rem; margin-bottom: 16px; }
+  .service-card h3 { font-size: 1rem; font-weight: 700; color: #333; }
+  
+  /* WHY US */
+  .why { padding: 100px 5%; background: #001233; color: #fff; }
+  .why .section-header h2 { color: #fff; }
+  .why .section-header p { color: #ffffff99; }
+  .why-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); gap: 32px; max-width: 1100px; margin: 0 auto; }
+  .why-card {
+    background: #ff174415; border: 1px solid #ff174444; border-radius: 16px; padding: 32px 24px;
+    transition: all 0.3s;
+  }
+  .why-card:hover { background: #ff174425; }
+  .why-icon { font-size: 2.5rem; margin-bottom: 16px; }
+  .why-card h3 { font-size: 1.1rem; font-weight: 700; color: #ff1744; margin-bottom: 10px; }
+  .why-card p { color: #ffffffaa; font-size: 0.95rem; line-height: 1.6; }
+  
+  /* TESTIMONIALS */
+  .testimonials { padding: 100px 5%; background: #f8f9fa; }
+  .testi-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 28px; max-width: 1100px; margin: 0 auto; }
+  .testi-card {
+    background: #fff; border-radius: 16px; padding: 32px; border-left: 4px solid #ff1744;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+  }
+  .testi-card p { font-size: 1rem; line-height: 1.7; color: #444; margin-bottom: 16px; font-style: italic; }
+  .testi-card strong { color: #ff1744; font-size: 0.95rem; }
+  
+  /* CONTACT */
+  .contact { padding: 100px 5%; background: #001233; }
+  .contact-inner { max-width: 900px; margin: 0 auto; text-align: center; }
+  .contact h2 { font-size: 2.5rem; color: #fff; font-weight: 800; margin-bottom: 16px; }
+  .contact p { color: #ffffff99; font-size: 1.1rem; margin-bottom: 48px; }
+  .contact-cards { display: flex; gap: 24px; justify-content: center; flex-wrap: wrap; margin-bottom: 48px; }
+  .contact-card {
+    background: #ff174415; border: 1px solid #ff174444;
+    border-radius: 16px; padding: 28px 40px; text-align: center; min-width: 200px;
+  }
+  .contact-card .icon { font-size: 2rem; margin-bottom: 12px; }
+  .contact-card .label { color: #ff1744; font-size: 0.85rem; font-weight: 600; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 6px; }
+  .contact-card .value { color: #fff; font-size: 1.05rem; font-weight: 700; }
+  .cta-big {
+    background: var(--accent); color: #000; padding: 18px 48px;
+    border-radius: 50px; font-weight: 800; font-size: 1.15rem;
+    text-decoration: none; display: inline-block; transition: all 0.3s;
+  }
+  .cta-big:hover { transform: translateY(-3px); box-shadow: 0 12px 40px #ff174466; }
+  
+  /* FOOTER */
+  footer {
+    background: #000; color: #666; padding: 32px 5%; text-align: center; font-size: 0.9rem;
+    border-top: 1px solid #ff174433;
+  }
+  footer span { color: #ff1744; }
+  
+  /* RESPONSIVE */
+  @media (max-width: 768px) {
+    .about-inner { grid-template-columns: 1fr; }
+    .about-visual { height: 200px; font-size: 4rem; }
+    .hero h1 { font-size: 2.5rem; }
+    .nav-links { display: none; }
+  }
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="nav-logo">ALLEN CENTERS GWALIO</div>
+  <div class="nav-links">
+    <a href="#about">About</a>
+    <a href="#services">Services</a>
+    <a href="#testimonials">Reviews</a>
+    <a href="https://wa.me/919513683910?text=Hi%2C%20I%20visited%20your%20website%20and%20would%20like%20to%20know%20more" class="nav-cta">WhatsApp Us</a>
+  </div>
+</nav>
+
+<section class="hero">
+  <div class="hero-content">
+    <div class="hero-badge">Gwalior • Coaching</div>
+    <h1>ALLEN Centers Gwalior<br><span>ALLEN. The Name Says It All.</span></h1>
+    <p>Serving Gwalior with excellence — trusted by hundreds of satisfied customers.</p>
+    <div class="hero-btns">
+      <a href="https://wa.me/919513683910?text=Hi%2C%20I%20visited%20your%20website%20and%20would%20like%20to%20know%20more" class="btn-primary">WhatsApp Us →</a>
+      <a href="#services" class="btn-secondary">Our Services</a>
+    </div>
+  </div>
+</section>
+
+<section class="about" id="about">
+  <div class="about-inner">
+    <div class="about-visual">📚</div>
+    <div class="about-text">
+      <h2>About <span>ALLEN Centers Gwalior</span></h2>
+      <p>ALLEN Centers Gwalior in Gwalior is a trusted coaching institute committed to academic excellence and competitive success. Our experienced faculty brings decades of expertise and a student-first approach to every class. We offer small-batch sessions, personalized attention, and proven study strategies to help every student reach their true potential.</p>
+      <div class="stats">
+        <div class="stat-item"><div class="stat-num">500+</div><div class="stat-label">Happy Customers</div></div>
+        <div class="stat-item"><div class="stat-num">5+</div><div class="stat-label">Years in Gwalior</div></div>
+        <div class="stat-item"><div class="stat-num">4.8★</div><div class="stat-label">Google Rating</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="services" id="services">
+  <div class="section-header">
+    <h2>Our <span>Services</span></h2>
+    <p>Everything you need, all under one roof</p>
+  </div>
+  <div class="services-grid">
+    <div class="service-card"><div class="service-icon">🏋️</div><h3>JEE Main</h3></div>
+<div class="service-card"><div class="service-icon">💪</div><h3>JEE Advanced</h3></div>
+<div class="service-card"><div class="service-icon">🎯</div><h3>NEET</h3></div>
+<div class="service-card"><div class="service-icon">⚡</div><h3>Class 9-10 Foundation</h3></div>
+<div class="service-card"><div class="service-icon">🌟</div><h3>NTSE & Olympiad</h3></div>
+
+  </div>
+</section>
+
+<section class="why">
+  <div class="section-header">
+    <h2>Why Choose <span>ALLEN Centers Gwalior?</span></h2>
+    <p>What makes us different from the rest</p>
+  </div>
+  <div class="why-grid">
+    <div class="why-card"><div class="why-icon">🏆</div><h3>Proven Excellence</h3><p>Years of delivering outstanding results with 500+ satisfied customers in Gwalior.</p></div>
+    <div class="why-card"><div class="why-icon">👨‍💼</div><h3>Expert Team</h3><p>Our highly trained professionals bring expertise and passion to every interaction.</p></div>
+    <div class="why-card"><div class="why-icon">💰</div><h3>Affordable Pricing</h3><p>Premium quality at prices that are accessible to everyone. No hidden charges.</p></div>
+    <div class="why-card"><div class="why-icon">📍</div><h3>Conveniently Located</h3><p>Easily accessible location in Gwalior with ample parking and comfortable facilities.</p></div>
+  </div>
+</section>
+
+<section class="testimonials" id="testimonials">
+  <div class="section-header">
+    <h2>What Our <span>Customers Say</span></h2>
+    <p>Real reviews from real people</p>
+  </div>
+  <div class="testi-grid">
+    <div class="testi-card"><p>"Cleared my exam in first attempt thanks to this institute."</p><strong>— Arjun Tiwari</strong></div>
+<div class="testi-card"><p>"Best teachers, best study material. Highly recommended!"</p><strong>— Divya Sharma</strong></div>
+<div class="testi-card"><p>"The doubt-clearing sessions are incredibly helpful."</p><strong>— Karan Patel</strong></div>
+
+  </div>
+</section>
+
+<section class="contact" id="contact">
+  <div class="contact-inner">
+    <h2>Get in Touch</h2>
+    <p>Ready to get started? Reach out to us today!</p>
+    <div class="contact-cards">
+      <div class="contact-card">
+        <div class="icon">📍</div>
+        <div class="label">Location</div>
+        <div class="value">Gwalior, MP</div>
+      </div>
+      <div class="contact-card">
+        <div class="icon">📱</div>
+        <div class="label">Phone</div>
+        <div class="value">+919513683910</div>
+      </div>
+    </div>
+    <a href="https://wa.me/919513683910?text=Hi%2C%20I%20visited%20your%20website%20and%20would%20like%20to%20know%20more" class="cta-big">WhatsApp Us — Connect Now</a>
+  </div>
+</section>
+
+<footer>
+  <p>© ALLEN Centers Gwalior — Gwalior, Madhya Pradesh | Made with ❤️ by <span>VedamVision</span></p>
+</footer>
+
+</body>
+</html>

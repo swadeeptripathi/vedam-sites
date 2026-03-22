@@ -1,0 +1,842 @@
+[
+  {
+    "sno": 1,
+    "slug": "001-anytime-fitness",
+    "name": "Anytime Fitness",
+    "city": "Indore",
+    "category": "gym",
+    "url": "https://swadeeptripathi.github.io/vedam-sites/sites/001-anytime-fitness/"
+  },
+  {
+    "sno": 2,
+    "slug": "002-gold-s-gym-vijaynagar",
+    "name": "Gold's Gym Vijaynagar",
+    "city": "Indore",
+    "category": "gym",
+    "url": "https://swadeeptripathi.github.io/vedam-sites/sites/002-gold-s-gym-vijaynagar/"
+  },
+  {
+    "sno": 3,
+    "slug": "003-akhaada-the-right-track-gym",
+    "name": "Akhaada The Right Track Gym",
+    "city": "Indore",
+    "category": "gym",
+    "url": "https://swadeeptripathi.github.io/vedam-sites/sites/003-akhaada-the-right-track-gym/"
+  },
+  {
+    "sno": 4,
+    "slug": "004-sapna-beauty-parlour",
+    "name": "Sapna Beauty Parlour",
+    "city": "Indore",
+    "category": "salon",
+    "url": "https://swadeeptripathi.github.io/vedam-sites/sites/004-sapna-beauty-parlour/"
+  },
+  {
+    "sno": 5,
+    "slug": "005-fashionista-beauty-salon",
+    "name": "Fashionista Beauty Salon",
+    "city": "Indore",
+    "category": "salon",
+    "url": "https://swadeeptripathi.github.io/vedam-sites/sites/005-fashionista-beauty-salon/"
+  },
+  {
+    "sno": 6,
+    "slug": "006-jabalpur-salon-indore",
+    "name": "Jabalpur Salon Indore",
+    "city": "Indore",
+    "category": "salon",
+    "url": "https://swadeeptripathi.github.io/vedam-sites/sites/006-jabalpur-salon-indore/"
+  },
+  {
+    "sno": 7,
+    "slug": "007-makeup-studio-academy",
+    "name": "Makeup Studio & Academy",
+    "city": "Indore",
+    "category": "salon",
+    "url": "https://swadeeptripathi.github.io/vedam-sites/sites/007-makeup-studio-academy/"
+  },
+  {
+    "sno": 8,
+    "slug": "008-nailash-beauty-studio",
+    "name": "Nailash Beauty Studio",
+    "city": "Indore",
+    "category": "salon",
+    "url": "https://swadeeptripathi.github.io/vedam-sites/sites/008-nailash-beauty-studio/"
+  },
+  {
+    "sno": 9,
+    "slug": "009-vaishnavi-tiffin-service",
+    "name": "Vaishnavi Tiffin Service",
+    "city": "Indore",
+    "category": "restaurant",
+    "url": "https://swadeeptripathi.github.io/vedam-sites/sites/009-vaishnavi-tiffin-service/"
+  },
+  {
+    "sno": 10,
+    "slug": "010-ribosome-institute",
+    "name": "Ribosome Institute",
+    "city": "Indore",
+    "category": "coaching",
+    "url": "https://swadeeptripathi.github.io/vedam-sites/sites/010-ribosome-institute/"
+  },
+  {
+    "sno": 11,
+    "slug": "011-cmc-coaching-indore",
+    "name": "CMC Coaching Indore",
+    "city": "Indore",
+    "category": "coaching",
+    "url": "https://swadeeptripathi.github.io/vedam-sites/sites/011-cmc-coaching-indore/"
+  },
+  {
+    "sno": 12,
+    "slug": "012-the-gate-academy-indore",
+    "name": "The GATE Academy Indore",
+    "city": "Indore",
+    "category": "coaching",
+    "url": "https://swadeeptripathi.github.io/vedam-sites/sites/012-the-gate-academy-indore/"
+  },
+  {
+    "sno": 13,
+    "slug": "013-aesl-career-guidance",
+    "name": "AESL Career Guidance",
+    "city": "Indore",
+    "category": "coaching",
+    "url": "https://swadeeptripathi.github.io/vedam-sites/sites/013-aesl-career-guidance/"
+  },
+  {
+    "sno": 14,
+    "slug": "014-ios-certified-dental-center",
+    "name": "IOS Certified Dental Center",
+    "city": "Indore",
+    "category": "dental",
+    "url": "https://swadeeptripathi.github.io/vedam-sites/sites/014-ios-certified-dental-center/"
+  },
+  {
+    "sno": 15,
+    "slug": "015-master-dental-surgery-clinic",
+    "name": "Master Dental Surgery Clinic",
+    "city": "Indore",
+    "category": "dental",
+    "url": "https://swadeeptripathi.github.io/vedam-sites/sites/015-master-dental-surgery-clinic/"
+  },
+  {
+    "sno": 16,
+    "slug": "016-dental-clinic-implant-center",
+    "name": "Dental Clinic & Implant Center",
+    "city": "Indore",
+    "category": "dental",
+    "url": "https://swadeeptripathi.github.io/vedam-sites/sites/016-dental-clinic-implant-center/"
+  },
+  {
+    "sno": 17,
+    "slug": "017-jay-chugh-photography",
+    "name": "Jay Chugh Photography",
+    "city": "Indore",
+    "category": "wedding",
+    "url": "https://swadeeptripathi.github.io/vedam-sites/sites/017-jay-chugh-photography/"
+  },
+  {
+    "sno": 18,
+    "slug": "018-harsh-studio-photography",
+    "name": "Harsh Studio Photography",
+    "city": "Indore",
+    "category": "wedding",
+    "url": "https://swadeeptripathi.github.io/vedam-sites/sites/018-harsh-studio-photography/"
+  },
+  {
+    "sno": 19,
+    "slug": "019-square-yards-property-dealer",
+    "name": "Square Yards Property Dealer",
+    "city": "Indore",
+    "category": "realestate",
+    "url": "https://swadeeptripathi.github.io/vedam-sites/sites/019-square-yards-property-dealer/"
+  },
+  {
+    "sno": 20,
+    "slug": "020-rishiraj-realty-consultant",
+    "name": "Rishiraj Realty Consultant",
+    "city": "Indore",
+    "category": "realestate",
+    "url": "https://swadeeptripathi.github.io/vedam-sites/sites/020-rishiraj-realty-consultant/"
+  },
+  {
+    "sno": 21,
+    "slug": "021-vishal-fitness-planet",
+    "name": "Vishal Fitness Planet",
+    "city": "Bhopal",
+    "category": "gym",
+    "url": "https://swadeeptripathi.github.io/vedam-sites/sites/021-vishal-fitness-planet/"
+  },
+  {
+    "sno": 22,
+    "slug": "022-gold-s-gym-bhopal",
+    "name": "Gold's Gym Bhopal",
+    "city": "Bhopal",
+    "category": "gym",
+    "url": "https://swadeeptripathi.github.io/vedam-sites/sites/022-gold-s-gym-bhopal/"
+  },
+  {
+    "sno": 23,
+    "slug": "023-glamour-studio-salon",
+    "name": "Glamour Studio Salon",
+    "city": "Bhopal",
+    "category": "salon",
+    "url": "https://swadeeptripathi.github.io/vedam-sites/sites/023-glamour-studio-salon/"
+  },
+  {
+    "sno": 24,
+    "slug": "024-glamour-zone-salon-bhopal",
+    "name": "Glamour Zone Salon Bhopal",
+    "city": "Bhopal",
+    "category": "salon",
+    "url": "https://swadeeptripathi.github.io/vedam-sites/sites/024-glamour-zone-salon-bhopal/"
+  },
+  {
+    "sno": 25,
+    "slug": "025-nikky-bawa-medi-salon",
+    "name": "Nikky Bawa Medi Salon",
+    "city": "Bhopal",
+    "category": "salon",
+    "url": "https://swadeeptripathi.github.io/vedam-sites/sites/025-nikky-bawa-medi-salon/"
+  },
+  {
+    "sno": 26,
+    "slug": "026-bhopal-social-restaurant",
+    "name": "Bhopal Social Restaurant",
+    "city": "Bhopal",
+    "category": "restaurant",
+    "url": "https://swadeeptripathi.github.io/vedam-sites/sites/026-bhopal-social-restaurant/"
+  },
+  {
+    "sno": 27,
+    "slug": "027-local-restaurant-bhopal",
+    "name": "Local Restaurant Bhopal",
+    "city": "Bhopal",
+    "category": "restaurant",
+    "url": "https://swadeeptripathi.github.io/vedam-sites/sites/027-local-restaurant-bhopal/"
+  },
+  {
+    "sno": 28,
+    "slug": "028-hotel-centre-park-bhopal",
+    "name": "Hotel Centre Park Bhopal",
+    "city": "Bhopal",
+    "category": "restaurant",
+    "url": "https://swadeeptripathi.github.io/vedam-sites/sites/028-hotel-centre-park-bhopal/"
+  },
+  {
+    "sno": 29,
+    "slug": "029-made-easy-coaching-bhopal",
+    "name": "MADE EASY Coaching Bhopal",
+    "city": "Bhopal",
+    "category": "coaching",
+    "url": "https://swadeeptripathi.github.io/vedam-sites/sites/029-made-easy-coaching-bhopal/"
+  },
+  {
+    "sno": 30,
+    "slug": "030-career-point-coaching-bhopal",
+    "name": "Career Point Coaching Bhopal",
+    "city": "Bhopal",
+    "category": "coaching",
+    "url": "https://swadeeptripathi.github.io/vedam-sites/sites/030-career-point-coaching-bhopal/"
+  },
+  {
+    "sno": 31,
+    "slug": "031-mitesh-rathi-classes",
+    "name": "Mitesh Rathi Classes",
+    "city": "Bhopal",
+    "category": "coaching",
+    "url": "https://swadeeptripathi.github.io/vedam-sites/sites/031-mitesh-rathi-classes/"
+  },
+  {
+    "sno": 32,
+    "slug": "032-ribosome-institute-bhopal",
+    "name": "Ribosome Institute Bhopal",
+    "city": "Bhopal",
+    "category": "coaching",
+    "url": "https://swadeeptripathi.github.io/vedam-sites/sites/032-ribosome-institute-bhopal/"
+  },
+  {
+    "sno": 33,
+    "slug": "033-studyspace-coaching-bhopal",
+    "name": "StudySpace Coaching Bhopal",
+    "city": "Bhopal",
+    "category": "coaching",
+    "url": "https://swadeeptripathi.github.io/vedam-sites/sites/033-studyspace-coaching-bhopal/"
+  },
+  {
+    "sno": 34,
+    "slug": "034-tuition-classes-bhopal",
+    "name": "Tuition Classes Bhopal",
+    "city": "Bhopal",
+    "category": "coaching",
+    "url": "https://swadeeptripathi.github.io/vedam-sites/sites/034-tuition-classes-bhopal/"
+  },
+  {
+    "sno": 35,
+    "slug": "035-reliable-institute-bhopal",
+    "name": "Reliable Institute Bhopal",
+    "city": "Bhopal",
+    "category": "coaching",
+    "url": "https://swadeeptripathi.github.io/vedam-sites/sites/035-reliable-institute-bhopal/"
+  },
+  {
+    "sno": 36,
+    "slug": "036-hi-tech-eye-care-laser-center",
+    "name": "Hi-Tech Eye Care & Laser Center",
+    "city": "Bhopal",
+    "category": "dental",
+    "url": "https://swadeeptripathi.github.io/vedam-sites/sites/036-hi-tech-eye-care-laser-center/"
+  },
+  {
+    "sno": 37,
+    "slug": "037-sam-creation-studio-bhopal",
+    "name": "Sam Creation Studio Bhopal",
+    "city": "Bhopal",
+    "category": "wedding",
+    "url": "https://swadeeptripathi.github.io/vedam-sites/sites/037-sam-creation-studio-bhopal/"
+  },
+  {
+    "sno": 38,
+    "slug": "038-gold-s-gym-jabalpur",
+    "name": "Gold's Gym Jabalpur",
+    "city": "Jabalpur",
+    "category": "gym",
+    "url": "https://swadeeptripathi.github.io/vedam-sites/sites/038-gold-s-gym-jabalpur/"
+  },
+  {
+    "sno": 39,
+    "slug": "039-power-gym-jabalpur",
+    "name": "Power Gym Jabalpur",
+    "city": "Jabalpur",
+    "category": "gym",
+    "url": "https://swadeeptripathi.github.io/vedam-sites/sites/039-power-gym-jabalpur/"
+  },
+  {
+    "sno": 40,
+    "slug": "040-desire-makeover-salon",
+    "name": "Desire Makeover Salon",
+    "city": "Jabalpur",
+    "category": "salon",
+    "url": "https://swadeeptripathi.github.io/vedam-sites/sites/040-desire-makeover-salon/"
+  },
+  {
+    "sno": 41,
+    "slug": "041-cute-look-beauty-salon",
+    "name": "Cute Look Beauty Salon",
+    "city": "Jabalpur",
+    "category": "salon",
+    "url": "https://swadeeptripathi.github.io/vedam-sites/sites/041-cute-look-beauty-salon/"
+  },
+  {
+    "sno": 42,
+    "slug": "042-bridal-makeup-studio-jabalpur",
+    "name": "Bridal Makeup Studio Jabalpur",
+    "city": "Jabalpur",
+    "category": "salon",
+    "url": "https://swadeeptripathi.github.io/vedam-sites/sites/042-bridal-makeup-studio-jabalpur/"
+  },
+  {
+    "sno": 43,
+    "slug": "043-seetafoods-jabalpur",
+    "name": "SeetaFoods Jabalpur",
+    "city": "Jabalpur",
+    "category": "restaurant",
+    "url": "https://swadeeptripathi.github.io/vedam-sites/sites/043-seetafoods-jabalpur/"
+  },
+  {
+    "sno": 44,
+    "slug": "044-pat-coaching-jabalpur",
+    "name": "PAT Coaching Jabalpur",
+    "city": "Jabalpur",
+    "category": "coaching",
+    "url": "https://swadeeptripathi.github.io/vedam-sites/sites/044-pat-coaching-jabalpur/"
+  },
+  {
+    "sno": 45,
+    "slug": "045-biozone-classes-jabalpur",
+    "name": "BIOZONE Classes Jabalpur",
+    "city": "Jabalpur",
+    "category": "coaching",
+    "url": "https://swadeeptripathi.github.io/vedam-sites/sites/045-biozone-classes-jabalpur/"
+  },
+  {
+    "sno": 46,
+    "slug": "046-galaxy-pat-institute-jabalpur",
+    "name": "Galaxy PAT Institute Jabalpur",
+    "city": "Jabalpur",
+    "category": "coaching",
+    "url": "https://swadeeptripathi.github.io/vedam-sites/sites/046-galaxy-pat-institute-jabalpur/"
+  },
+  {
+    "sno": 47,
+    "slug": "047-gkm-nursing-coaching-jabalpur",
+    "name": "GKM Nursing Coaching Jabalpur",
+    "city": "Jabalpur",
+    "category": "coaching",
+    "url": "https://swadeeptripathi.github.io/vedam-sites/sites/047-gkm-nursing-coaching-jabalpur/"
+  },
+  {
+    "sno": 48,
+    "slug": "048-indian-agriculture-academy",
+    "name": "Indian Agriculture Academy",
+    "city": "Jabalpur",
+    "category": "coaching",
+    "url": "https://swadeeptripathi.github.io/vedam-sites/sites/048-indian-agriculture-academy/"
+  },
+  {
+    "sno": 49,
+    "slug": "049-sambhav-institute-jabalpur",
+    "name": "Sambhav Institute Jabalpur",
+    "city": "Jabalpur",
+    "category": "coaching",
+    "url": "https://swadeeptripathi.github.io/vedam-sites/sites/049-sambhav-institute-jabalpur/"
+  },
+  {
+    "sno": 50,
+    "slug": "050-shukla-maths-academy",
+    "name": "Shukla Maths Academy",
+    "city": "Jabalpur",
+    "category": "coaching",
+    "url": "https://swadeeptripathi.github.io/vedam-sites/sites/050-shukla-maths-academy/"
+  },
+  {
+    "sno": 51,
+    "slug": "051-om-career-institute-jabalpur",
+    "name": "Om Career Institute Jabalpur",
+    "city": "Jabalpur",
+    "category": "coaching",
+    "url": "https://swadeeptripathi.github.io/vedam-sites/sites/051-om-career-institute-jabalpur/"
+  },
+  {
+    "sno": 52,
+    "slug": "052-parvati-institute-of-mathematics",
+    "name": "Parvati Institute of Mathematics",
+    "city": "Jabalpur",
+    "category": "coaching",
+    "url": "https://swadeeptripathi.github.io/vedam-sites/sites/052-parvati-institute-of-mathematics/"
+  },
+  {
+    "sno": 53,
+    "slug": "053-pratap-concept-classes",
+    "name": "Pratap Concept Classes",
+    "city": "Jabalpur",
+    "category": "coaching",
+    "url": "https://swadeeptripathi.github.io/vedam-sites/sites/053-pratap-concept-classes/"
+  },
+  {
+    "sno": 54,
+    "slug": "054-qazi-physics-classes",
+    "name": "Qazi Physics Classes",
+    "city": "Jabalpur",
+    "category": "coaching",
+    "url": "https://swadeeptripathi.github.io/vedam-sites/sites/054-qazi-physics-classes/"
+  },
+  {
+    "sno": 55,
+    "slug": "055-ramanujam-maths-classes",
+    "name": "Ramanujam Maths Classes",
+    "city": "Jabalpur",
+    "category": "coaching",
+    "url": "https://swadeeptripathi.github.io/vedam-sites/sites/055-ramanujam-maths-classes/"
+  },
+  {
+    "sno": 56,
+    "slug": "056-goutam-ias-academy",
+    "name": "Goutam IAS Academy",
+    "city": "Jabalpur",
+    "category": "coaching",
+    "url": "https://swadeeptripathi.github.io/vedam-sites/sites/056-goutam-ias-academy/"
+  },
+  {
+    "sno": 57,
+    "slug": "057-cynosure-civil-services",
+    "name": "CYNOSURE Civil Services",
+    "city": "Jabalpur",
+    "category": "coaching",
+    "url": "https://swadeeptripathi.github.io/vedam-sites/sites/057-cynosure-civil-services/"
+  },
+  {
+    "sno": 58,
+    "slug": "058-deepika-classes-jabalpur",
+    "name": "Deepika Classes Jabalpur",
+    "city": "Jabalpur",
+    "category": "coaching",
+    "url": "https://swadeeptripathi.github.io/vedam-sites/sites/058-deepika-classes-jabalpur/"
+  },
+  {
+    "sno": 59,
+    "slug": "059-aparajit-ias-academy",
+    "name": "Aparajit IAS Academy",
+    "city": "Jabalpur",
+    "category": "coaching",
+    "url": "https://swadeeptripathi.github.io/vedam-sites/sites/059-aparajit-ias-academy/"
+  },
+  {
+    "sno": 60,
+    "slug": "060-asha-ias-institute",
+    "name": "Asha IAS Institute",
+    "city": "Jabalpur",
+    "category": "coaching",
+    "url": "https://swadeeptripathi.github.io/vedam-sites/sites/060-asha-ias-institute/"
+  },
+  {
+    "sno": 61,
+    "slug": "061-yojna-ias-coaching",
+    "name": "Yojna IAS Coaching",
+    "city": "Jabalpur",
+    "category": "coaching",
+    "url": "https://swadeeptripathi.github.io/vedam-sites/sites/061-yojna-ias-coaching/"
+  },
+  {
+    "sno": 62,
+    "slug": "062-siddhi-academy-jabalpur",
+    "name": "Siddhi Academy Jabalpur",
+    "city": "Jabalpur",
+    "category": "coaching",
+    "url": "https://swadeeptripathi.github.io/vedam-sites/sites/062-siddhi-academy-jabalpur/"
+  },
+  {
+    "sno": 63,
+    "slug": "063-tiwari-study-zone",
+    "name": "Tiwari Study Zone",
+    "city": "Jabalpur",
+    "category": "coaching",
+    "url": "https://swadeeptripathi.github.io/vedam-sites/sites/063-tiwari-study-zone/"
+  },
+  {
+    "sno": 64,
+    "slug": "064-sai-classes-garha",
+    "name": "Sai Classes Garha",
+    "city": "Jabalpur",
+    "category": "coaching",
+    "url": "https://swadeeptripathi.github.io/vedam-sites/sites/064-sai-classes-garha/"
+  },
+  {
+    "sno": 65,
+    "slug": "065-sai-focus-academy",
+    "name": "Sai Focus Academy",
+    "city": "Jabalpur",
+    "category": "coaching",
+    "url": "https://swadeeptripathi.github.io/vedam-sites/sites/065-sai-focus-academy/"
+  },
+  {
+    "sno": 66,
+    "slug": "066-shree-sai-career-classes",
+    "name": "Shree Sai Career Classes",
+    "city": "Jabalpur",
+    "category": "coaching",
+    "url": "https://swadeeptripathi.github.io/vedam-sites/sites/066-shree-sai-career-classes/"
+  },
+  {
+    "sno": 67,
+    "slug": "067-elite-classes-jabalpur",
+    "name": "ELITE Classes Jabalpur",
+    "city": "Jabalpur",
+    "category": "coaching",
+    "url": "https://swadeeptripathi.github.io/vedam-sites/sites/067-elite-classes-jabalpur/"
+  },
+  {
+    "sno": 68,
+    "slug": "068-excellence-academy",
+    "name": "Excellence Academy",
+    "city": "Jabalpur",
+    "category": "coaching",
+    "url": "https://swadeeptripathi.github.io/vedam-sites/sites/068-excellence-academy/"
+  },
+  {
+    "sno": 69,
+    "slug": "069-paathshaala-coaching-classes",
+    "name": "PAATHSHAALA Coaching Classes",
+    "city": "Jabalpur",
+    "category": "coaching",
+    "url": "https://swadeeptripathi.github.io/vedam-sites/sites/069-paathshaala-coaching-classes/"
+  },
+  {
+    "sno": 70,
+    "slug": "070-virmani-classes-jabalpur",
+    "name": "Virmani Classes Jabalpur",
+    "city": "Jabalpur",
+    "category": "coaching",
+    "url": "https://swadeeptripathi.github.io/vedam-sites/sites/070-virmani-classes-jabalpur/"
+  },
+  {
+    "sno": 71,
+    "slug": "071-matics-tuition-classes",
+    "name": "Matics Tuition Classes",
+    "city": "Jabalpur",
+    "category": "coaching",
+    "url": "https://swadeeptripathi.github.io/vedam-sites/sites/071-matics-tuition-classes/"
+  },
+  {
+    "sno": 72,
+    "slug": "072-tiwari-classes-jabalpur",
+    "name": "Tiwari Classes Jabalpur",
+    "city": "Jabalpur",
+    "category": "coaching",
+    "url": "https://swadeeptripathi.github.io/vedam-sites/sites/072-tiwari-classes-jabalpur/"
+  },
+  {
+    "sno": 73,
+    "slug": "073-chauhan-dental-clinic",
+    "name": "Chauhan Dental Clinic",
+    "city": "Jabalpur",
+    "category": "dental",
+    "url": "https://swadeeptripathi.github.io/vedam-sites/sites/073-chauhan-dental-clinic/"
+  },
+  {
+    "sno": 74,
+    "slug": "074-vision-eye-care-hospital",
+    "name": "Vision Eye Care Hospital",
+    "city": "Jabalpur",
+    "category": "dental",
+    "url": "https://swadeeptripathi.github.io/vedam-sites/sites/074-vision-eye-care-hospital/"
+  },
+  {
+    "sno": 75,
+    "slug": "075-roshan-netralaya-eye-hospital",
+    "name": "Roshan Netralaya Eye Hospital",
+    "city": "Jabalpur",
+    "category": "dental",
+    "url": "https://swadeeptripathi.github.io/vedam-sites/sites/075-roshan-netralaya-eye-hospital/"
+  },
+  {
+    "sno": 76,
+    "slug": "076-daksh-netralaya-eye-clinic",
+    "name": "Daksh Netralaya Eye Clinic",
+    "city": "Jabalpur",
+    "category": "dental",
+    "url": "https://swadeeptripathi.github.io/vedam-sites/sites/076-daksh-netralaya-eye-clinic/"
+  },
+  {
+    "sno": 77,
+    "slug": "077-imagic-production",
+    "name": "Imagic Production",
+    "city": "Jabalpur",
+    "category": "wedding",
+    "url": "https://swadeeptripathi.github.io/vedam-sites/sites/077-imagic-production/"
+  },
+  {
+    "sno": 78,
+    "slug": "078-maya-photo-studio",
+    "name": "Maya Photo Studio",
+    "city": "Jabalpur",
+    "category": "wedding",
+    "url": "https://swadeeptripathi.github.io/vedam-sites/sites/078-maya-photo-studio/"
+  },
+  {
+    "sno": 79,
+    "slug": "079-4-studio-digital-jabalpur",
+    "name": "4 Studio Digital Jabalpur",
+    "city": "Jabalpur",
+    "category": "wedding",
+    "url": "https://swadeeptripathi.github.io/vedam-sites/sites/079-4-studio-digital-jabalpur/"
+  },
+  {
+    "sno": 80,
+    "slug": "080-wedding-photography-jabalpur",
+    "name": "Wedding Photography Jabalpur",
+    "city": "Jabalpur",
+    "category": "wedding",
+    "url": "https://swadeeptripathi.github.io/vedam-sites/sites/080-wedding-photography-jabalpur/"
+  },
+  {
+    "sno": 81,
+    "slug": "081-jabalpur-helpline-rental",
+    "name": "Jabalpur Helpline Rental",
+    "city": "Jabalpur",
+    "category": "realestate",
+    "url": "https://swadeeptripathi.github.io/vedam-sites/sites/081-jabalpur-helpline-rental/"
+  },
+  {
+    "sno": 82,
+    "slug": "082-shri-sanskar-rental-property",
+    "name": "Shri Sanskar Rental & Property",
+    "city": "Jabalpur",
+    "category": "realestate",
+    "url": "https://swadeeptripathi.github.io/vedam-sites/sites/082-shri-sanskar-rental-property/"
+  },
+  {
+    "sno": 83,
+    "slug": "083-homeonline-property-dealers",
+    "name": "HomeOnline Property Dealers",
+    "city": "Jabalpur",
+    "category": "realestate",
+    "url": "https://swadeeptripathi.github.io/vedam-sites/sites/083-homeonline-property-dealers/"
+  },
+  {
+    "sno": 84,
+    "slug": "084-ad-fitness-studio-gwalior",
+    "name": "AD Fitness Studio Gwalior",
+    "city": "Gwalior",
+    "category": "gym",
+    "url": "https://swadeeptripathi.github.io/vedam-sites/sites/084-ad-fitness-studio-gwalior/"
+  },
+  {
+    "sno": 85,
+    "slug": "085-city-centre-gym-gwalior",
+    "name": "City Centre Gym Gwalior",
+    "city": "Gwalior",
+    "category": "gym",
+    "url": "https://swadeeptripathi.github.io/vedam-sites/sites/085-city-centre-gym-gwalior/"
+  },
+  {
+    "sno": 86,
+    "slug": "086-ss-fitness-club-gwalior",
+    "name": "SS Fitness Club Gwalior",
+    "city": "Gwalior",
+    "category": "gym",
+    "url": "https://swadeeptripathi.github.io/vedam-sites/sites/086-ss-fitness-club-gwalior/"
+  },
+  {
+    "sno": 87,
+    "slug": "087-beauty-academy-gwalior",
+    "name": "Beauty Academy Gwalior",
+    "city": "Gwalior",
+    "category": "salon",
+    "url": "https://swadeeptripathi.github.io/vedam-sites/sites/087-beauty-academy-gwalior/"
+  },
+  {
+    "sno": 88,
+    "slug": "088-glamour-salon-gwalior",
+    "name": "Glamour Salon Gwalior",
+    "city": "Gwalior",
+    "category": "salon",
+    "url": "https://swadeeptripathi.github.io/vedam-sites/sites/088-glamour-salon-gwalior/"
+  },
+  {
+    "sno": 89,
+    "slug": "089-tulsi-vihar-salon-gwalior",
+    "name": "Tulsi Vihar Salon Gwalior",
+    "city": "Gwalior",
+    "category": "salon",
+    "url": "https://swadeeptripathi.github.io/vedam-sites/sites/089-tulsi-vihar-salon-gwalior/"
+  },
+  {
+    "sno": 90,
+    "slug": "090-aahar-tiffin-services-gwalior",
+    "name": "Aahar Tiffin Services Gwalior",
+    "city": "Gwalior",
+    "category": "restaurant",
+    "url": "https://swadeeptripathi.github.io/vedam-sites/sites/090-aahar-tiffin-services-gwalior/"
+  },
+  {
+    "sno": 91,
+    "slug": "091-alfanzo-restaurant-gwalior",
+    "name": "Alfanzo Restaurant Gwalior",
+    "city": "Gwalior",
+    "category": "restaurant",
+    "url": "https://swadeeptripathi.github.io/vedam-sites/sites/091-alfanzo-restaurant-gwalior/"
+  },
+  {
+    "sno": 92,
+    "slug": "092-career-launcher-gwalior",
+    "name": "Career Launcher Gwalior",
+    "city": "Gwalior",
+    "category": "coaching",
+    "url": "https://swadeeptripathi.github.io/vedam-sites/sites/092-career-launcher-gwalior/"
+  },
+  {
+    "sno": 93,
+    "slug": "093-coaching-institute-gwalior",
+    "name": "Coaching Institute Gwalior",
+    "city": "Gwalior",
+    "category": "coaching",
+    "url": "https://swadeeptripathi.github.io/vedam-sites/sites/093-coaching-institute-gwalior/"
+  },
+  {
+    "sno": 94,
+    "slug": "094-sci-pat-coaching-gwalior",
+    "name": "SCI PAT Coaching Gwalior",
+    "city": "Gwalior",
+    "category": "coaching",
+    "url": "https://swadeeptripathi.github.io/vedam-sites/sites/094-sci-pat-coaching-gwalior/"
+  },
+  {
+    "sno": 95,
+    "slug": "095-allen-centers-gwalior",
+    "name": "ALLEN Centers Gwalior",
+    "city": "Gwalior",
+    "category": "coaching",
+    "url": "https://swadeeptripathi.github.io/vedam-sites/sites/095-allen-centers-gwalior/"
+  },
+  {
+    "sno": 96,
+    "slug": "096-upsc-coaching-center-gwalior",
+    "name": "UPSC Coaching Center Gwalior",
+    "city": "Gwalior",
+    "category": "coaching",
+    "url": "https://swadeeptripathi.github.io/vedam-sites/sites/096-upsc-coaching-center-gwalior/"
+  },
+  {
+    "sno": 97,
+    "slug": "097-ravindra-ias-coaching-gwalior",
+    "name": "Ravindra IAS Coaching Gwalior",
+    "city": "Gwalior",
+    "category": "coaching",
+    "url": "https://swadeeptripathi.github.io/vedam-sites/sites/097-ravindra-ias-coaching-gwalior/"
+  },
+  {
+    "sno": 98,
+    "slug": "098-krishna-institute-tuition-center",
+    "name": "Krishna Institute Tuition Center",
+    "city": "Gwalior",
+    "category": "coaching",
+    "url": "https://swadeeptripathi.github.io/vedam-sites/sites/098-krishna-institute-tuition-center/"
+  },
+  {
+    "sno": 99,
+    "slug": "099-dental-solutions-gwalior",
+    "name": "Dental Solutions Gwalior",
+    "city": "Gwalior",
+    "category": "dental",
+    "url": "https://swadeeptripathi.github.io/vedam-sites/sites/099-dental-solutions-gwalior/"
+  },
+  {
+    "sno": 100,
+    "slug": "100-asg-eye-hospital-gwalior",
+    "name": "ASG Eye Hospital Gwalior",
+    "city": "Gwalior",
+    "category": "dental",
+    "url": "https://swadeeptripathi.github.io/vedam-sites/sites/100-asg-eye-hospital-gwalior/"
+  },
+  {
+    "sno": 101,
+    "slug": "101-advancedeyecare-gwalior",
+    "name": "AdvancedEyeCare Gwalior",
+    "city": "Gwalior",
+    "category": "dental",
+    "url": "https://swadeeptripathi.github.io/vedam-sites/sites/101-advancedeyecare-gwalior/"
+  },
+  {
+    "sno": 102,
+    "slug": "102-asg-eye-hospital-main",
+    "name": "ASG Eye Hospital Main",
+    "city": "Gwalior",
+    "category": "dental",
+    "url": "https://swadeeptripathi.github.io/vedam-sites/sites/102-asg-eye-hospital-main/"
+  },
+  {
+    "sno": 103,
+    "slug": "103-mukul-studio-gwalior",
+    "name": "Mukul Studio Gwalior",
+    "city": "Gwalior",
+    "category": "wedding",
+    "url": "https://swadeeptripathi.github.io/vedam-sites/sites/103-mukul-studio-gwalior/"
+  },
+  {
+    "sno": 104,
+    "slug": "104-rinaya-property-dealer-gwalior",
+    "name": "Rinaya Property Dealer Gwalior",
+    "city": "Gwalior",
+    "category": "realestate",
+    "url": "https://swadeeptripathi.github.io/vedam-sites/sites/104-rinaya-property-dealer-gwalior/"
+  },
+  {
+    "sno": 105,
+    "slug": "105-blue-lotus-real-estate-gwalior",
+    "name": "Blue Lotus Real Estate Gwalior",
+    "city": "Gwalior",
+    "category": "realestate",
+    "url": "https://swadeeptripathi.github.io/vedam-sites/sites/105-blue-lotus-real-estate-gwalior/"
+  }
+]
