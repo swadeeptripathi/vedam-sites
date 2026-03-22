@@ -1,0 +1,1557 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Dental Clinic and Implant Center is determined to Clinic — Indore</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+<style>
+  /* ===== CSS RESET & VARIABLES ===== */
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  :root {
+    --primary: #00B4D8;
+    --primary-dark: #0077B6;
+    --bg: #FFFFFF;
+    --bg-alt: #F0F9FF;
+    --text: #1A2B3C;
+    --text-light: #5A7184;
+    --border: #E0F2FE;
+    --radius: 16px;
+    --shadow: 0 4px 24px rgba(0,180,216,0.10);
+    --shadow-lg: 0 8px 40px rgba(0,180,216,0.18);
+    --font-display: 'Nunito', sans-serif;
+    --font-body: 'Inter', sans-serif;
+    --ease: cubic-bezier(0.23, 1, 0.32, 1);
+  }
+  html { scroll-behavior: smooth; }
+  body {
+    font-family: var(--font-body);
+    color: var(--text);
+    background: var(--bg);
+    line-height: 1.6;
+    overflow-x: hidden;
+  }
+  img { max-width: 100%; display: block; }
+  a { text-decoration: none; color: inherit; }
+  ul { list-style: none; }
+  section { padding: clamp(3rem, 6vw, 5rem) 0; }
+
+  /* ===== UTILITY ===== */
+  .container { width: 92%; max-width: 1200px; margin: 0 auto; }
+  .section-title {
+    font-family: var(--font-display);
+    font-size: clamp(1.6rem, 3.5vw, 2.6rem);
+    font-weight: 800;
+    color: var(--text);
+    margin-bottom: 0.4rem;
+  }
+  .section-subtitle {
+    font-size: clamp(0.95rem, 1.5vw, 1.1rem);
+    color: var(--text-light);
+    margin-bottom: 2.5rem;
+    max-width: 560px;
+  }
+  .section-header { margin-bottom: 2.5rem; }
+  .section-header .tag {
+    display: inline-block;
+    background: #E0F2FE;
+    color: var(--primary-dark);
+    font-size: 0.8rem;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    padding: 4px 14px;
+    border-radius: 50px;
+    margin-bottom: 0.75rem;
+  }
+  .accent { color: var(--primary); }
+  .btn {
+    display: inline-flex; align-items: center; gap: 8px;
+    background: var(--primary);
+    color: #fff;
+    font-family: var(--font-display);
+    font-weight: 700;
+    font-size: 1rem;
+    padding: 14px 28px;
+    border-radius: 50px;
+    border: none; cursor: pointer;
+    transition: transform 0.2s var(--ease), box-shadow 0.2s var(--ease);
+    box-shadow: 0 4px 18px rgba(0,180,216,0.35);
+  }
+  .btn:hover { transform: translateY(-2px) scale(1.03); box-shadow: 0 8px 28px rgba(0,180,216,0.45); }
+  .btn-outline {
+    background: transparent;
+    border: 2px solid var(--primary);
+    color: var(--primary);
+    box-shadow: none;
+  }
+  .btn-outline:hover { background: var(--primary); color: #fff; }
+
+  /* ===== REVEAL ANIMATION ===== */
+  .reveal {
+    opacity: 0;
+    transform: translateY(28px);
+    transition: opacity 0.6s var(--ease), transform 0.6s var(--ease);
+  }
+  .reveal.visible { opacity: 1; transform: translateY(0); }
+  .reveal-delay-1 { transition-delay: 0.1s; }
+  .reveal-delay-2 { transition-delay: 0.2s; }
+  .reveal-delay-3 { transition-delay: 0.3s; }
+  .reveal-delay-4 { transition-delay: 0.4s; }
+
+  /* ===== NAV ===== */
+  .navbar {
+    position: sticky; top: 0; z-index: 1000;
+    background: rgba(255,255,255,0.96);
+    backdrop-filter: blur(12px);
+    border-bottom: 1px solid var(--border);
+    padding: 0;
+  }
+  .nav-inner {
+    display: flex; align-items: center; justify-content: space-between;
+    height: 68px;
+  }
+  .nav-logo {
+    font-family: var(--font-display);
+    font-weight: 800;
+    font-size: 1.3rem;
+    color: var(--text);
+    display: flex; align-items: center; gap: 10px;
+  }
+  .nav-logo .logo-icon {
+    width: 38px; height: 38px;
+    background: linear-gradient(135deg, var(--primary), var(--primary-dark));
+    border-radius: 10px;
+    display: flex; align-items: center; justify-content: center;
+  }
+  .nav-logo .logo-icon svg { width: 22px; height: 22px; fill: white; }
+  .nav-links {
+    display: flex; align-items: center; gap: 2rem;
+  }
+  .nav-links a {
+    font-size: 0.95rem; font-weight: 500; color: var(--text-light);
+    transition: color 0.2s;
+  }
+  .nav-links a:hover { color: var(--primary); }
+  .nav-cta { margin-left: 1rem; }
+  .hamburger {
+    display: none; flex-direction: column; gap: 5px;
+    cursor: pointer; background: none; border: none; padding: 4px;
+  }
+  .hamburger span {
+    display: block; width: 24px; height: 2px;
+    background: var(--text); border-radius: 2px;
+    transition: all 0.3s;
+  }
+  .mobile-menu {
+    display: none;
+    flex-direction: column;
+    padding: 1rem 1.5rem 1.5rem;
+    border-top: 1px solid var(--border);
+    background: #fff;
+    gap: 1rem;
+  }
+  .mobile-menu.open { display: flex; }
+  .mobile-menu a {
+    font-size: 1rem; font-weight: 600; color: var(--text);
+    padding: 0.5rem 0;
+    border-bottom: 1px solid var(--border);
+  }
+  .mobile-menu .btn { margin-top: 0.5rem; text-align: center; justify-content: center; }
+
+  /* ===== HERO ===== */
+  .hero {
+    background: var(--bg);
+    padding: clamp(3rem, 6vw, 5rem) 0;
+    overflow: hidden;
+  }
+  .hero-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+    align-items: center;
+  }
+  .hero-badge {
+    display: inline-flex; align-items: center; gap: 8px;
+    background: #E0F2FE; color: var(--primary-dark);
+    font-size: 0.82rem; font-weight: 700;
+    padding: 6px 14px; border-radius: 50px;
+    margin-bottom: 1.2rem;
+  }
+  .hero-badge .dot {
+    width: 8px; height: 8px; background: var(--primary);
+    border-radius: 50%; animation: pulse 2s infinite;
+  }
+  @keyframes pulse { 0%,100%{opacity:1;transform:scale(1)} 50%{opacity:0.5;transform:scale(1.3)} }
+  .hero-title {
+    font-family: var(--font-display);
+    font-size: clamp(2rem, 4.5vw, 3.4rem);
+    font-weight: 800;
+    line-height: 1.2;
+    color: var(--text);
+    margin-bottom: 1.2rem;
+  }
+  .hero-title .line2 { color: var(--primary); }
+  .hero-desc {
+    color: var(--text-light);
+    font-size: clamp(0.95rem, 1.5vw, 1.08rem);
+    margin-bottom: 1.8rem;
+    max-width: 480px;
+    line-height: 1.75;
+  }
+  .hero-actions { display: flex; gap: 1rem; flex-wrap: wrap; margin-bottom: 2rem; }
+  .hero-stats {
+    display: flex; gap: 2rem; flex-wrap: wrap;
+    padding-top: 1.5rem;
+    border-top: 1px solid var(--border);
+  }
+  .hero-stat .num {
+    font-family: var(--font-display);
+    font-size: 1.6rem; font-weight: 800; color: var(--primary);
+    line-height: 1;
+  }
+  .hero-stat .lbl { font-size: 0.82rem; color: var(--text-light); margin-top: 2px; }
+  .hero-visual { position: relative; }
+  .hero-img-wrap {
+    border-radius: 24px;
+    overflow: hidden;
+    aspect-ratio: 4/3;
+    box-shadow: var(--shadow-lg);
+  }
+  .hero-img-wrap img { width: 100%; height: 100%; object-fit: cover; }
+  .hero-pill {
+    position: absolute;
+    background: #fff;
+    border-radius: 14px;
+    padding: 12px 18px;
+    box-shadow: 0 4px 24px rgba(0,0,0,0.10);
+    display: flex; align-items: center; gap: 10px;
+  }
+  .hero-pill.p1 { bottom: -16px; left: -16px; }
+  .hero-pill.p2 { top: -16px; right: -16px; }
+  .hero-pill .pill-icon {
+    width: 36px; height: 36px; border-radius: 50%;
+    background: var(--bg-alt);
+    display: flex; align-items: center; justify-content: center;
+    font-size: 1.2rem;
+  }
+  .hero-pill .pill-label { font-size: 0.8rem; color: var(--text-light); }
+  .hero-pill .pill-value { font-family: var(--font-display); font-weight: 800; font-size: 1rem; color: var(--text); }
+
+  /* Hero Appointment Form */
+  .hero-form-card {
+    background: #fff;
+    border-radius: var(--radius);
+    border: 1px solid var(--border);
+    box-shadow: var(--shadow);
+    padding: 1.5rem;
+    margin-top: 1.5rem;
+  }
+  .hero-form-card h3 {
+    font-family: var(--font-display);
+    font-size: 1.1rem; font-weight: 800; color: var(--text);
+    margin-bottom: 1rem;
+  }
+  .form-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 0.75rem; }
+  .form-group { display: flex; flex-direction: column; gap: 4px; }
+  .form-group label { font-size: 0.8rem; font-weight: 600; color: var(--text-light); }
+  .form-group input, .form-group select {
+    border: 1.5px solid var(--border);
+    border-radius: 10px;
+    padding: 10px 14px;
+    font-family: var(--font-body);
+    font-size: 0.95rem;
+    color: var(--text);
+    background: #FAFCFE;
+    transition: border-color 0.2s;
+    outline: none;
+  }
+  .form-group input:focus, .form-group select:focus { border-color: var(--primary); }
+  .form-full { grid-column: 1 / -1; }
+  .form-submit { margin-top: 0.75rem; width: 100%; padding: 13px; font-size: 1rem; }
+
+  /* ===== TRUST BAR ===== */
+  .trust-bar {
+    background: var(--primary);
+    padding: 1rem 0;
+    overflow: hidden;
+  }
+  .trust-ticker {
+    display: flex; gap: 3rem; align-items: center;
+    animation: ticker 28s linear infinite;
+    white-space: nowrap;
+  }
+  .trust-ticker-wrap { overflow: hidden; }
+  @keyframes ticker { 0%{transform:translateX(0)} 100%{transform:translateX(-50%)} }
+  .trust-item {
+    display: flex; align-items: center; gap: 10px;
+    color: #fff;
+    font-family: var(--font-display);
+    font-weight: 700;
+    font-size: 0.92rem;
+  }
+  .trust-item svg { opacity: 0.8; }
+
+  /* ===== SERVICES ===== */
+  .services { background: var(--bg-alt); }
+  .services-tabs {
+    display: flex; gap: 0.75rem;
+    margin-bottom: 2rem;
+    flex-wrap: wrap;
+  }
+  .tab-btn {
+    padding: 10px 22px;
+    border-radius: 50px;
+    border: 2px solid var(--border);
+    background: #fff;
+    font-family: var(--font-display);
+    font-weight: 700;
+    font-size: 0.9rem;
+    color: var(--text-light);
+    cursor: pointer;
+    transition: all 0.2s;
+  }
+  .tab-btn.active, .tab-btn:hover {
+    background: var(--primary);
+    border-color: var(--primary);
+    color: #fff;
+  }
+  .services-panel { display: none; }
+  .services-panel.active { display: grid; }
+  .services-grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.25rem;
+  }
+  .service-card {
+    background: #fff;
+    border-radius: var(--radius);
+    overflow: hidden;
+    box-shadow: var(--shadow);
+    transition: transform 0.3s var(--ease), box-shadow 0.3s var(--ease);
+    border: 1px solid var(--border);
+  }
+  .service-card:hover { transform: translateY(-6px); box-shadow: var(--shadow-lg); }
+  .service-img {
+    height: 160px;
+    overflow: hidden;
+    position: relative;
+  }
+  .service-img img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.4s var(--ease); }
+  .service-card:hover .service-img img { transform: scale(1.07); }
+  .service-body { padding: 1.25rem; }
+  .service-icon {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+  }
+  .service-body h3 {
+    font-family: var(--font-display);
+    font-weight: 800; font-size: 1.05rem;
+    color: var(--text); margin-bottom: 0.4rem;
+  }
+  .service-body p { font-size: 0.88rem; color: var(--text-light); line-height: 1.65; }
+
+  /* ===== WHY US ===== */
+  .why-us { background: var(--bg); }
+  .why-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 3.5rem; align-items: center; }
+  .why-img {
+    border-radius: 24px; overflow: hidden;
+    aspect-ratio: 4/5;
+    box-shadow: var(--shadow-lg);
+    position: relative;
+  }
+  .why-img img { width: 100%; height: 100%; object-fit: cover; }
+  .why-points { display: flex; flex-direction: column; gap: 1.5rem; margin-top: 1.5rem; }
+  .why-point {
+    display: flex; gap: 1.2rem; align-items: flex-start;
+    padding: 1.2rem;
+    background: var(--bg-alt);
+    border-radius: var(--radius);
+    border: 1px solid var(--border);
+    transition: box-shadow 0.2s;
+  }
+  .why-point:hover { box-shadow: var(--shadow); }
+  .why-point-icon {
+    width: 48px; height: 48px; flex-shrink: 0;
+    background: linear-gradient(135deg, var(--primary), var(--primary-dark));
+    border-radius: 12px;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 1.4rem;
+    color: #fff;
+  }
+  .why-point h4 {
+    font-family: var(--font-display);
+    font-weight: 800; font-size: 1rem;
+    color: var(--text); margin-bottom: 0.25rem;
+  }
+  .why-point p { font-size: 0.87rem; color: var(--text-light); line-height: 1.6; }
+
+  /* ===== DOCTORS ===== */
+  .doctors { background: var(--bg-alt); }
+  .doctors-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem; }
+  .doctor-card {
+    background: #fff;
+    border-radius: var(--radius);
+    overflow: hidden;
+    box-shadow: var(--shadow);
+    border: 1px solid var(--border);
+    text-align: center;
+    transition: transform 0.3s var(--ease);
+  }
+  .doctor-card:hover { transform: translateY(-6px); }
+  .doctor-img { height: 220px; overflow: hidden; }
+  .doctor-img img { width: 100%; height: 100%; object-fit: cover; object-position: top; }
+  .doctor-body { padding: 1.4rem; }
+  .doctor-name {
+    font-family: var(--font-display);
+    font-weight: 800; font-size: 1.1rem;
+    color: var(--text); margin-bottom: 0.3rem;
+  }
+  .doctor-degree {
+    font-size: 0.82rem; font-weight: 600;
+    color: var(--primary); margin-bottom: 0.3rem;
+  }
+  .doctor-spec { font-size: 0.87rem; color: var(--text-light); margin-bottom: 0.75rem; }
+  .doctor-exp {
+    display: inline-block;
+    background: var(--bg-alt); color: var(--primary-dark);
+    font-size: 0.8rem; font-weight: 700;
+    padding: 4px 12px; border-radius: 50px;
+  }
+
+  /* ===== TESTIMONIALS ===== */
+  .testimonials { background: var(--bg); }
+  .testimonials-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.25rem; }
+  .testi-card {
+    background: var(--bg-alt);
+    border-radius: var(--radius);
+    padding: 1.5rem;
+    border: 1px solid var(--border);
+    transition: box-shadow 0.2s;
+    position: relative;
+  }
+  .testi-card:hover { box-shadow: var(--shadow); }
+  .testi-stars { color: #F59E0B; font-size: 1rem; margin-bottom: 0.75rem; letter-spacing: 2px; }
+  .testi-text { font-size: 0.9rem; color: var(--text); line-height: 1.7; margin-bottom: 1.1rem; font-style: italic; }
+  .testi-author { display: flex; align-items: center; gap: 10px; }
+  .testi-avatar {
+    width: 40px; height: 40px; border-radius: 50%;
+    background: linear-gradient(135deg, var(--primary), var(--primary-dark));
+    display: flex; align-items: center; justify-content: center;
+    font-family: var(--font-display);
+    font-weight: 800; font-size: 1rem; color: #fff;
+    flex-shrink: 0;
+  }
+  .testi-name { font-family: var(--font-display); font-weight: 700; font-size: 0.95rem; }
+  .testi-treatment { font-size: 0.8rem; color: var(--primary); font-weight: 600; }
+  .testi-quote {
+    position: absolute;
+    top: 1.2rem; right: 1.2rem;
+    font-size: 2.5rem;
+    color: var(--border);
+    font-family: serif;
+    line-height: 1;
+  }
+
+  /* ===== GALLERY ===== */
+  .gallery { background: var(--bg-alt); }
+  .gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+  }
+  .gallery-item {
+    border-radius: var(--radius);
+    overflow: hidden;
+    aspect-ratio: 4/3;
+    position: relative;
+    cursor: pointer;
+  }
+  .gallery-item img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.4s var(--ease); }
+  .gallery-item:hover img { transform: scale(1.08); }
+  .gallery-item-overlay {
+    position: absolute; inset: 0;
+    background: linear-gradient(to top, rgba(0,119,182,0.6), transparent);
+    opacity: 0;
+    transition: opacity 0.3s;
+    display: flex; align-items: flex-end;
+    padding: 1rem;
+  }
+  .gallery-item:hover .gallery-item-overlay { opacity: 1; }
+  .gallery-item-overlay span {
+    color: #fff; font-family: var(--font-display);
+    font-weight: 700; font-size: 0.9rem;
+  }
+
+  /* ===== FACILITIES ===== */
+  .facilities { background: var(--bg); }
+  .facilities-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1.25rem; }
+  .facility-card {
+    background: var(--bg-alt);
+    border-radius: var(--radius);
+    padding: 1.5rem;
+    border: 1px solid var(--border);
+    text-align: center;
+    transition: box-shadow 0.2s, transform 0.2s;
+  }
+  .facility-card:hover { box-shadow: var(--shadow); transform: translateY(-4px); }
+  .facility-icon { font-size: 2.2rem; margin-bottom: 0.75rem; }
+  .facility-card h3 {
+    font-family: var(--font-display);
+    font-weight: 800; font-size: 1rem;
+    color: var(--text); margin-bottom: 0.4rem;
+  }
+  .facility-card p { font-size: 0.85rem; color: var(--text-light); line-height: 1.6; }
+
+  /* ===== APPOINTMENT ===== */
+  .appointment { background: linear-gradient(135deg, #E0F2FE 0%, #F0F9FF 100%); }
+  .appointment-wrap {
+    display: grid; grid-template-columns: 1fr 1fr;
+    gap: 3rem; align-items: center;
+  }
+  .appointment-info h2 {
+    font-family: var(--font-display);
+    font-size: clamp(1.6rem, 3vw, 2.4rem);
+    font-weight: 800; color: var(--text);
+    margin-bottom: 1rem;
+  }
+  .appointment-info p { font-size: 1rem; color: var(--text-light); line-height: 1.75; margin-bottom: 1.5rem; }
+  .appointment-benefits { display: flex; flex-direction: column; gap: 0.75rem; }
+  .appointment-benefit {
+    display: flex; align-items: center; gap: 10px;
+    font-size: 0.9rem; font-weight: 600; color: var(--text);
+  }
+  .appointment-benefit::before {
+    content: '✓';
+    width: 22px; height: 22px;
+    background: var(--primary); color: #fff;
+    border-radius: 50%;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 0.7rem; font-weight: 800;
+    flex-shrink: 0;
+  }
+  .appointment-form-card {
+    background: #fff;
+    border-radius: 20px;
+    padding: 2rem;
+    box-shadow: var(--shadow-lg);
+    border: 1px solid var(--border);
+  }
+  .appointment-form-card h3 {
+    font-family: var(--font-display);
+    font-weight: 800; font-size: 1.3rem;
+    color: var(--text); margin-bottom: 1.25rem;
+    text-align: center;
+  }
+  .appt-form .form-group { margin-bottom: 0.85rem; }
+  .appt-form .form-group input,
+  .appt-form .form-group select,
+  .appt-form .form-group textarea {
+    width: 100%;
+    border: 1.5px solid var(--border);
+    border-radius: 10px;
+    padding: 12px 16px;
+    font-family: var(--font-body);
+    font-size: 0.95rem;
+    color: var(--text);
+    background: #FAFCFE;
+    transition: border-color 0.2s;
+    outline: none;
+  }
+  .appt-form .form-group input:focus,
+  .appt-form .form-group select:focus,
+  .appt-form .form-group textarea:focus { border-color: var(--primary); }
+  .appt-form textarea { resize: vertical; min-height: 80px; }
+  .appt-submit {
+    width: 100%;
+    padding: 14px;
+    font-size: 1rem;
+    border-radius: 12px;
+    margin-top: 0.25rem;
+  }
+
+  /* ===== LOCATION ===== */
+  .location { background: var(--bg); }
+  .location-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 2.5rem; align-items: start; }
+  .map-wrap {
+    border-radius: var(--radius);
+    overflow: hidden;
+    border: 2px solid var(--border);
+    box-shadow: var(--shadow);
+  }
+  .map-wrap iframe { display: block; width: 100%; height: 360px; }
+  .location-info h2 {
+    font-family: var(--font-display);
+    font-size: clamp(1.4rem, 2.5vw, 2rem);
+    font-weight: 800; color: var(--text);
+    margin-bottom: 1.5rem;
+  }
+  .contact-items { display: flex; flex-direction: column; gap: 1.25rem; margin-bottom: 1.5rem; }
+  .contact-item {
+    display: flex; gap: 1rem; align-items: flex-start;
+  }
+  .contact-item-icon {
+    width: 44px; height: 44px; flex-shrink: 0;
+    background: var(--bg-alt);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 1.2rem;
+  }
+  .contact-item-text strong {
+    display: block;
+    font-family: var(--font-display);
+    font-weight: 700; font-size: 0.9rem; color: var(--text);
+    margin-bottom: 2px;
+  }
+  .contact-item-text span { font-size: 0.88rem; color: var(--text-light); }
+  .hours-table { width: 100%; border-collapse: collapse; margin-top: 1.5rem; }
+  .hours-table th, .hours-table td {
+    padding: 10px 14px;
+    text-align: left;
+    font-size: 0.88rem;
+    border-bottom: 1px solid var(--border);
+  }
+  .hours-table th { font-weight: 700; color: var(--primary-dark); background: var(--bg-alt); }
+  .hours-table td { color: var(--text-light); }
+  .hours-table tr:last-child td, .hours-table tr:last-child th { border-bottom: none; }
+  .open-badge {
+    display: inline-block;
+    background: #DCFCE7; color: #15803D;
+    font-size: 0.75rem; font-weight: 700;
+    padding: 2px 10px; border-radius: 50px;
+  }
+
+  /* ===== FOOTER ===== */
+  footer {
+    background: var(--text);
+    color: #AECCD8;
+    padding: 3rem 0 1.5rem;
+  }
+  .footer-grid {
+    display: grid;
+    grid-template-columns: 1.6fr 1fr 1fr 1.4fr;
+    gap: 2rem;
+    margin-bottom: 2.5rem;
+  }
+  .footer-brand .logo {
+    font-family: var(--font-display);
+    font-weight: 800; font-size: 1.3rem;
+    color: #fff; margin-bottom: 0.75rem;
+  }
+  .footer-brand p { font-size: 0.87rem; line-height: 1.7; }
+  .footer-brand .social-links { display: flex; gap: 0.75rem; margin-top: 1.25rem; }
+  .social-icon {
+    width: 36px; height: 36px;
+    background: rgba(255,255,255,0.08);
+    border-radius: 8px;
+    display: flex; align-items: center; justify-content: center;
+    transition: background 0.2s;
+  }
+  .social-icon:hover { background: var(--primary); }
+  .social-icon svg { width: 16px; height: 16px; fill: #fff; }
+  .footer-col h4 {
+    font-family: var(--font-display);
+    font-weight: 800; font-size: 0.95rem;
+    color: #fff; margin-bottom: 1rem;
+  }
+  .footer-col ul { display: flex; flex-direction: column; gap: 0.5rem; }
+  .footer-col ul li a {
+    font-size: 0.87rem; color: #AECCD8;
+    transition: color 0.2s;
+  }
+  .footer-col ul li a:hover { color: var(--primary); }
+  .footer-bottom {
+    border-top: 1px solid rgba(255,255,255,0.08);
+    padding-top: 1.25rem;
+    display: flex; justify-content: space-between;
+    align-items: center; flex-wrap: gap;
+    gap: 0.75rem;
+  }
+  .footer-bottom p { font-size: 0.83rem; color: #6D9DB3; }
+  .footer-bottom .demo-tag {
+    font-size: 0.8rem;
+    background: rgba(0,180,216,0.18);
+    color: var(--primary);
+    padding: 4px 12px; border-radius: 50px;
+    font-weight: 700;
+  }
+
+  /* ===== WHATSAPP FLOAT ===== */
+  .whatsapp-float {
+    position: fixed; bottom: 24px; right: 24px; z-index: 9999;
+    background: #25D366; border-radius: 50%; width: 58px; height: 58px;
+    display: flex; align-items: center; justify-content: center;
+    box-shadow: 0 4px 20px rgba(37,211,102,0.45);
+    transition: transform 0.3s var(--ease);
+  }
+  .whatsapp-float:hover { transform: scale(1.12); }
+  .whatsapp-float svg { width: 30px; height: 30px; fill: #fff; }
+  .wa-tooltip {
+    position: absolute; right: 68px;
+    background: #fff; color: var(--text);
+    font-size: 0.82rem; font-weight: 600;
+    padding: 6px 12px; border-radius: 8px;
+    white-space: nowrap;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.12);
+    opacity: 0; pointer-events: none;
+    transition: opacity 0.2s;
+  }
+  .whatsapp-float:hover .wa-tooltip { opacity: 1; }
+
+  /* ===== RESPONSIVE ===== */
+  @media (max-width: 1024px) {
+    .hero-grid, .why-grid, .appointment-wrap, .location-grid { grid-template-columns: 1fr; }
+    .hero-pill.p1 { bottom: 10px; left: 10px; }
+    .hero-pill.p2 { top: 10px; right: 10px; }
+    .doctors-grid { grid-template-columns: repeat(2, 1fr); }
+    .testimonials-grid { grid-template-columns: repeat(2, 1fr); }
+    .facilities-grid { grid-template-columns: repeat(2, 1fr); }
+    .services-grid { grid-template-columns: repeat(2, 1fr); }
+    .footer-grid { grid-template-columns: 1fr 1fr; }
+  }
+
+  @media (max-width: 768px) {
+    .nav-links, .nav-cta { display: none; }
+    .hamburger { display: flex; }
+    .hero-grid { grid-template-columns: 1fr; }
+    .services-grid { grid-template-columns: 1fr; }
+    .doctors-grid { grid-template-columns: 1fr; }
+    .testimonials-grid { grid-template-columns: 1fr; }
+    .gallery-grid { grid-template-columns: repeat(2, 1fr); }
+    .facilities-grid { grid-template-columns: 1fr 1fr; }
+    .footer-grid { grid-template-columns: 1fr; }
+    .footer-bottom { flex-direction: column; align-items: flex-start; }
+    .form-grid { grid-template-columns: 1fr; }
+    .hero-stats { gap: 1.2rem; }
+    .why-img { display: none; }
+  }
+
+  @media (max-width: 480px) {
+    .gallery-grid { grid-template-columns: 1fr; }
+    .facilities-grid { grid-template-columns: 1fr; }
+    .hero-actions { flex-direction: column; }
+  }
+</style>
+</head>
+<body>
+
+<!-- ===== NAVIGATION ===== -->
+<nav class="navbar">
+  <div class="container">
+    <div class="nav-inner">
+      <a href="#" class="nav-logo">
+        <div class="logo-icon">
+          <svg viewBox="0 0 24 24"><path d="M12 2C8.67 2 6 4.67 6 8c0 2.33 1.2 4.37 3 5.55V20h6v-6.45C16.8 12.37 18 10.33 18 8c0-3.33-2.67-6-6-6zm-1 15v-2h2v2h-2zm1-4c-2.21 0-4-1.79-4-4s1.79-4 4-4 4 1.79 4 4-1.79 4-4 4z"/></svg>
+        </div>
+        SmileCare <span class="accent">Clinic</span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="#services">Services</a></li>
+        <li><a href="#doctors">Doctors</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#facilities">Facilities</a></li>
+        <li><a href="#location">Contact</a></li>
+      </ul>
+      <a href="#appointment" class="btn nav-cta">📅 Book Appointment</a>
+      <button class="hamburger" id="hamburger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="#services">Services</a>
+    <a href="#doctors">Doctors</a>
+    <a href="#gallery">Gallery</a>
+    <a href="#facilities">Facilities</a>
+    <a href="#location">Contact</a>
+    <a href="#appointment" class="btn">📅 Book Appointment</a>
+  </div>
+</nav>
+
+<!-- ===== HERO ===== -->
+<section class="hero" id="hero">
+  <div class="container">
+    <div class="hero-grid">
+      <div class="hero-content reveal">
+        <div class="hero-badge">
+          <span class="dot"></span>
+          Trusted by 8,000+ Patients in Indore
+        </div>
+        <h1 class="hero-title">
+          Healthy Smiles,<br/>
+          <span class="line2">Clear Vision —</span><br/>
+          All Under One Roof
+        </h1>
+        <p class="hero-desc">
+          At Dental Clinic and Implant Center is determined to Clinic, Indore's most trusted multi-specialty clinic, we combine advanced dentistry and comprehensive eye care under one roof. From painless root canals to LASIK vision correction — your comfort and confidence are our priority.
+        </p>
+        <div class="hero-actions">
+          <a href="#appointment" class="btn">📅 Book Appointment</a>
+          <a href="tel:+919826030762" class="btn btn-outline">📞 Call Us Now</a>
+        </div>
+        <div class="hero-stats">
+          <div class="hero-stat">
+            <div class="num">12+</div>
+            <div class="lbl">Years of Experience</div>
+          </div>
+          <div class="hero-stat">
+            <div class="num">8,000+</div>
+            <div class="lbl">Happy Patients</div>
+          </div>
+          <div class="hero-stat">
+            <div class="num">3</div>
+            <div class="lbl">Specialist Doctors</div>
+          </div>
+          <div class="hero-stat">
+            <div class="num">10+</div>
+            <div class="lbl">Treatments Offered</div>
+          </div>
+        </div>
+
+        <!-- Inline Hero Appointment Form -->
+        <div class="hero-form-card reveal reveal-delay-2">
+          <h3>🗓️ Quick Appointment Request</h3>
+          <form class="form-grid" onsubmit="handleHeroForm(event)">
+            <div class="form-group">
+              <label>Your Name</label>
+              <input type="text" placeholder="e.g. Ravi Sharma" required />
+            </div>
+            <div class="form-group">
+              <label>Phone Number</label>
+              <input type="tel" placeholder="9XXXXXXXXX" required />
+            </div>
+            <div class="form-group">
+              <label>Preferred Date</label>
+              <input type="date" required />
+            </div>
+            <div class="form-group">
+              <label>Service Needed</label>
+              <select>
+                <option value="">Select...</option>
+                <option>Dental Consultation</option>
+                <option>Root Canal Treatment</option>
+                <option>Teeth Whitening</option>
+                <option>Dental Implants</option>
+                <option>Braces / Aligners</option>
+                <option>Tooth Extraction</option>
+                <option>Dental Cleaning</option>
+                <option>Eye Consultation</option>
+                <option>LASIK Surgery</option>
+                <option>Spectacle Prescription</option>
+                <option>Cataract Treatment</option>
+                <option>Retina Check-Up</option>
+              </select>
+            </div>
+            <div class="form-full">
+              <button type="submit" class="btn form-submit">✉️ Send Appointment Request</button>
+            </div>
+          </form>
+        </div>
+      </div>
+
+      <div class="hero-visual reveal reveal-delay-2">
+        <div class="hero-img-wrap">
+          <img src="https://images.unsplash.com/photo-1606811971618-4486d14f3f99?auto=format&fit=crop&w=800&q=80" alt="Dentist with patient — SmileCare Clinic" loading="lazy" />
+        </div>
+        <div class="hero-pill p1">
+          <div class="pill-icon">😊</div>
+          <div>
+            <div class="pill-label">Satisfaction Rate</div>
+            <div class="pill-value">98.6%</div>
+          </div>
+        </div>
+        <div class="hero-pill p2">
+          <div class="pill-icon">🏥</div>
+          <div>
+            <div class="pill-label">Treatments Done</div>
+            <div class="pill-value">15,000+</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== TRUST BAR ===== -->
+<div class="trust-bar">
+  <div class="trust-ticker-wrap">
+    <div class="trust-ticker">
+      <!-- duplicate items for seamless loop -->
+      <div class="trust-item"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg> Painless Root Canal Treatment</div>
+      <div class="trust-item"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg> LASIK Vision Correction</div>
+      <div class="trust-item"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg> Digital X-Ray Technology</div>
+      <div class="trust-item"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg> Sterilized Equipment</div>
+      <div class="trust-item"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg> EMI Available on All Treatments</div>
+      <div class="trust-item"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg> Mon–Sat 9AM–8PM</div>
+      <!-- repeat -->
+      <div class="trust-item"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg> Painless Root Canal Treatment</div>
+      <div class="trust-item"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg> LASIK Vision Correction</div>
+      <div class="trust-item"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg> Digital X-Ray Technology</div>
+      <div class="trust-item"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg> Sterilized Equipment</div>
+      <div class="trust-item"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg> EMI Available on All Treatments</div>
+      <div class="trust-item"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg> Mon–Sat 9AM–8PM</div>
+    </div>
+  </div>
+</div>
+
+<!-- ===== SERVICES ===== -->
+<section class="services" id="services">
+  <div class="container">
+    <div class="section-header reveal">
+      <span class="tag">Our Specialities</span>
+      <h2 class="section-title">World-Class Dental & Eye Care</h2>
+      <p class="section-subtitle">From routine check-ups to complex procedures — our specialists deliver precision care with the latest technology, keeping your comfort first.</p>
+      <div class="services-tabs">
+        <button class="tab-btn active" data-tab="dental">🦷 Dental Services</button>
+        <button class="tab-btn" data-tab="eye">👁️ Eye Care Services</button>
+      </div>
+    </div>
+
+    <!-- DENTAL PANEL -->
+    <div class="services-panel active services-grid" id="tab-dental">
+      <div class="service-card reveal">
+        <div class="service-img">
+          <img src="https://images.unsplash.com/photo-1609840114035-3c981b782dfe?auto=format&fit=crop&w=600&q=80" alt="Root Canal Treatment" loading="lazy" />
+        </div>
+        <div class="service-body">
+          <div class="service-icon">🦷</div>
+          <h3>Root Canal Treatment</h3>
+          <p>Modern, painless root canal procedures using rotary endodontics and apex locators. We eliminate infection at the root without discomfort, preserving your natural tooth and preventing extraction. Most cases are completed in a single visit with our advanced equipment.</p>
+        </div>
+      </div>
+      <div class="service-card reveal reveal-delay-1">
+        <div class="service-img">
+          <img src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&w=600&q=80" alt="Teeth Whitening" loading="lazy" />
+        </div>
+        <div class="service-body">
+          <div class="service-icon">✨</div>
+          <h3>Teeth Whitening</h3>
+          <p>Achieve a radiant, confident smile with our professional in-chair whitening systems. We use FDA-approved hydrogen peroxide gels activated by LED technology, lifting years of staining from coffee, tea, and tobacco in under an hour — safely and comfortably.</p>
+        </div>
+      </div>
+      <div class="service-card reveal reveal-delay-2">
+        <div class="service-img">
+          <img src="https://images.unsplash.com/photo-1559757175-0eb30cd8c063?auto=format&fit=crop&w=600&q=80" alt="Dental Implants" loading="lazy" />
+        </div>
+        <div class="service-body">
+          <div class="service-icon">🔩</div>
+          <h3>Dental Implants</h3>
+          <p>Replace missing teeth with titanium implants that look, feel, and function exactly like natural teeth. Our implants have a 97% success rate and are designed to last a lifetime. 3D digital planning ensures precise placement for the best aesthetic and functional outcome.</p>
+        </div>
+      </div>
+      <div class="service-card reveal">
+        <div class="service-img">
+          <img src="https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?auto=format&fit=crop&w=600&q=80" alt="Braces and Aligners" loading="lazy" />
+        </div>
+        <div class="service-body">
+          <div class="service-icon">😁</div>
+          <h3>Braces & Clear Aligners</h3>
+          <p>Straighten your smile with traditional metal braces or virtually invisible clear aligners. Our orthodontic treatment is personalized with digital scanning — no messy impressions. Clear aligners are removable, comfortable, and perfect for adults and professionals.</p>
+        </div>
+      </div>
+      <div class="service-card reveal reveal-delay-1">
+        <div class="service-img">
+          <img src="https://images.unsplash.com/photo-1606811971618-4486d14f3f99?auto=format&fit=crop&w=600&q=80" alt="Tooth Extraction" loading="lazy" />
+        </div>
+        <div class="service-body">
+          <div class="service-icon">🩺</div>
+          <h3>Painless Extraction</h3>
+          <p>When a tooth cannot be saved, our gentle extraction technique ensures the procedure is quick and virtually painless. We use premium local anesthetics, atraumatic instruments, and follow-up care guidelines so you heal fast with minimal swelling or discomfort.</p>
+        </div>
+      </div>
+      <div class="service-card reveal reveal-delay-2">
+        <div class="service-img">
+          <img src="https://images.unsplash.com/photo-1607619056574-7b8d3ee536b2?auto=format&fit=crop&w=600&q=80" alt="Dental Cleaning" loading="lazy" />
+        </div>
+        <div class="service-body">
+          <div class="service-icon">🌟</div>
+          <h3>Scaling & Cleaning</h3>
+          <p>Professional scaling and polishing removes years of tartar buildup, calculus, and surface stains that regular brushing misses. Our ultrasonic scaler is gentle on gums while thoroughly cleaning below the gumline, preventing gum disease and freshening your breath significantly.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- EYE PANEL -->
+    <div class="services-panel services-grid" id="tab-eye">
+      <div class="service-card reveal">
+        <div class="service-img">
+          <img src="https://images.unsplash.com/photo-1551601651-2a8555f1a136?auto=format&fit=crop&w=600&q=80" alt="LASIK Surgery" loading="lazy" />
+        </div>
+        <div class="service-body">
+          <div class="service-icon">👁️</div>
+          <h3>LASIK Vision Correction</h3>
+          <p>Freedom from glasses and contact lenses with our bladeless LASIK surgery. Using the latest excimer laser technology, we reshape your cornea in under 10 minutes per eye — permanently correcting myopia, hyperopia, and astigmatism. Most patients achieve 6/6 vision by the next morning.</p>
+        </div>
+      </div>
+      <div class="service-card reveal reveal-delay-1">
+        <div class="service-img">
+          <img src="https://images.unsplash.com/photo-1585747860715-2ba37e788b70?auto=format&fit=crop&w=600&q=80" alt="Spectacle Prescription" loading="lazy" />
+        </div>
+        <div class="service-body">
+          <div class="service-icon">👓</div>
+          <h3>Spectacle Prescription</h3>
+          <p>Comprehensive eye examination using computerized autorefractors and manual retinoscopy for the most accurate spectacle and contact lens prescriptions. We test for near vision, distance vision, colour vision, and screen-related eye strain — helping you see life in perfect clarity.</p>
+        </div>
+      </div>
+      <div class="service-card reveal reveal-delay-2">
+        <div class="service-img">
+          <img src="https://images.unsplash.com/photo-1579684385127-1ef15d508118?auto=format&fit=crop&w=600&q=80" alt="Cataract Treatment" loading="lazy" />
+        </div>
+        <div class="service-body">
+          <div class="service-icon">🔬</div>
+          <h3>Cataract Surgery</h3>
+          <p>Restore crystal-clear vision with phacoemulsification — the gold standard micro-incision cataract surgery. We use foldable intraocular lenses (IOLs) customized to your lifestyle. The procedure takes 15 minutes, requires no stitches, and has an exceptional recovery rate with minimal downtime.</p>
+        </div>
+      </div>
+      <div class="service-card reveal reveal-delay-3">
+        <div class="service-img">
+          <img src="https://images.unsplash.com/photo-1516549655169-df83a0774514?auto=format&fit=crop&w=600&q=80" alt="Retina Check" loading="lazy" />
+        </div>
+        <div class="service-body">
+          <div class="service-icon">🩻</div>
+          <h3>Retina Examination</h3>
+          <p>Early detection of diabetic retinopathy, macular degeneration, retinal detachment, and glaucoma using dilated fundus examination and OCT (Optical Coherence Tomography). Regular retina check-ups are critical for diabetics and those above 40 — we recommend annual screenings for high-risk patients.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== WHY US ===== -->
+<section class="why-us" id="why-us">
+  <div class="container">
+    <div class="why-grid">
+      <div class="why-img reveal">
+        <img src="https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?auto=format&fit=crop&w=700&q=80" alt="Modern dental clinic interior" loading="lazy" />
+      </div>
+      <div class="reveal reveal-delay-1">
+        <span class="tag">Why Patients Choose Us</span>
+        <h2 class="section-title">The SmileCare Difference</h2>
+        <p class="section-subtitle">We're not just treating conditions — we're building long-term relationships with every patient. Here's what sets us apart.</p>
+        <div class="why-points">
+          <div class="why-point">
+            <div class="why-point-icon">👨‍⚕️</div>
+            <div>
+              <h4>Experienced Specialists</h4>
+              <p>Our doctors hold MDS and MS degrees from top Indian universities with 10–18 years of clinical experience each. You're always treated by a qualified specialist — never a junior intern or general practitioner doing specialist work.</p>
+            </div>
+          </div>
+          <div class="why-point">
+            <div class="why-point-icon">🔬</div>
+            <div>
+              <h4>Modern Technology & Equipment</h4>
+              <p>We invest in the latest dental chairs, digital X-rays, rotary endodontic systems, ultrasonic scalers, OCT machines, and laser systems — so your treatment is faster, more accurate, and more comfortable than traditional methods.</p>
+            </div>
+          </div>
+          <div class="why-point">
+            <div class="why-point-icon">💉</div>
+            <div>
+              <h4>Truly Painless Procedures</h4>
+              <p>We use topical anesthetic gel before every injection, the latest computer-controlled anesthesia delivery systems, and a calm, distraction-friendly environment. Over 96% of our patients report little to no pain during procedures.</p>
+            </div>
+          </div>
+          <div class="why-point">
+            <div class="why-point-icon">💰</div>
+            <div>
+              <h4>Affordable & Transparent Pricing</h4>
+              <p>We believe quality healthcare shouldn't be a luxury. We offer clear, upfront pricing, no hidden charges, and flexible EMI options on all major treatments. Insurance claims are also assisted by our in-house billing team.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== DOCTORS ===== -->
+<section class="doctors" id="doctors">
+  <div class="container">
+    <div class="section-header reveal">
+      <span class="tag">Meet Our Specialists</span>
+      <h2 class="section-title">Expert Doctors, Compassionate Care</h2>
+      <p class="section-subtitle">Our team of highly qualified specialists brings decades of experience across dentistry and ophthalmology, committed to your long-term health.</p>
+    </div>
+    <div class="doctors-grid">
+      <div class="doctor-card reveal">
+        <div class="doctor-img">
+          <img src="https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?auto=format&fit=crop&w=500&q=80" alt="Dr. Rajesh Malhotra" loading="lazy" />
+        </div>
+        <div class="doctor-body">
+          <div class="doctor-name">Dr. Rajesh Malhotra</div>
+          <div class="doctor-degree">BDS, MDS (Oral & Maxillofacial Surgery)</div>
+          <div class="doctor-spec">Senior Dental Surgeon & Implantologist<br/>Former Consultant, Bombay Hospital Indore</div>
+          <span class="doctor-exp">⏱️ 18 Years Experience</span>
+        </div>
+      </div>
+      <div class="doctor-card reveal reveal-delay-1">
+        <div class="doctor-img">
+          <img src="https://images.unsplash.com/photo-1559839734-2b71ea197ec2?auto=format&fit=crop&w=500&q=80" alt="Dr. Priya Sharma" loading="lazy" />
+        </div>
+        <div class="doctor-body">
+          <div class="doctor-name">Dr. Priya Sharma</div>
+          <div class="doctor-degree">BDS, MDS (Orthodontics & Dentofacial Orthopaedics)</div>
+          <div class="doctor-spec">Orthodontist & Smile Design Specialist<br/>Certified Invisalign Provider</div>
+          <span class="doctor-exp">⏱️ 12 Years Experience</span>
+        </div>
+      </div>
+      <div class="doctor-card reveal reveal-delay-2">
+        <div class="doctor-img">
+          <img src="https://images.unsplash.com/photo-1594824476967-48c8b964273f?auto=format&fit=crop&w=500&q=80" alt="Dr. Anil Verma" loading="lazy" />
+        </div>
+        <div class="doctor-body">
+          <div class="doctor-name">Dr. Anil Verma</div>
+          <div class="doctor-degree">MBBS, MS (Ophthalmology), FRCS (UK)</div>
+          <div class="doctor-spec">Senior Eye Surgeon & LASIK Specialist<br/>Expert in Cataract & Retina Surgery</div>
+          <span class="doctor-exp">⏱️ 15 Years Experience</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== TESTIMONIALS ===== -->
+<section class="testimonials" id="testimonials">
+  <div class="container">
+    <div class="section-header reveal">
+      <span class="tag">Patient Stories</span>
+      <h2 class="section-title">Real Patients, Real Results</h2>
+      <p class="section-subtitle">Don't take our word for it — hear from the thousands of Indoreans who trust SmileCare for their family's dental and eye health.</p>
+    </div>
+    <div class="testimonials-grid">
+      <div class="testi-card reveal">
+        <div class="testi-quote">"</div>
+        <div class="testi-stars">★★★★★</div>
+        <p class="testi-text">I was terrified of root canals — I had been avoiding it for two years! Dr. Malhotra's team explained every step and used such gentle technique that I barely felt anything. One sitting, and my tooth pain of months was gone. Wish I'd come sooner!</p>
+        <div class="testi-author">
+          <div class="testi-avatar">RS</div>
+          <div>
+            <div class="testi-name">Rohit Saxena</div>
+            <div class="testi-treatment">Root Canal Treatment</div>
+          </div>
+        </div>
+      </div>
+      <div class="testi-card reveal reveal-delay-1">
+        <div class="testi-quote">"</div>
+        <div class="testi-stars">★★★★★</div>
+        <p class="testi-text">Got LASIK done by Dr. Anil Verma 8 months ago. I was -4.5 in both eyes and now I have 6/6 vision — no glasses! The procedure itself took less than 10 minutes total. The clinic was spotlessly clean, staff was attentive and the follow-up care was excellent.</p>
+        <div class="testi-author">
+          <div class="testi-avatar">NK</div>
+          <div>
+            <div class="testi-name">Neha Kulkarni</div>
+            <div class="testi-treatment">LASIK Surgery</div>
+          </div>
+        </div>
+      </div>
+      <div class="testi-card reveal reveal-delay-2">
+        <div class="testi-quote">"</div>
+        <div class="testi-stars">★★★★★</div>
+        <p class="testi-text">My daughter was embarrassed about her teeth — we got Invisalign done with Dr. Priya. In 14 months, her smile transformed completely. Dr. Priya is incredibly patient with kids and explained every stage. The results were beyond our expectations. Worth every rupee!</p>
+        <div class="testi-author">
+          <div class="testi-avatar">SP</div>
+          <div>
+            <div class="testi-name">Sunita Patel</div>
+            <div class="testi-treatment">Clear Aligners (Child)</div>
+          </div>
+        </div>
+      </div>
+      <div class="testi-card reveal">
+        <div class="testi-quote">"</div>
+        <div class="testi-stars">★★★★★</div>
+        <p class="testi-text">I had my cataract operated on both eyes — my mother's age, 68 — and she could read the newspaper the very next day. She was scared of going under the knife but the team was so reassuring, the operation was done in 15 minutes. She says this is the best gift I ever gave her.</p>
+        <div class="testi-author">
+          <div class="testi-avatar">AM</div>
+          <div>
+            <div class="testi-name">Arun Mishra</div>
+            <div class="testi-treatment">Cataract Surgery (For Mother)</div>
+          </div>
+        </div>
+      </div>
+      <div class="testi-card reveal reveal-delay-1">
+        <div class="testi-quote">"</div>
+        <div class="testi-stars">★★★★★</div>
+        <p class="testi-text">Got dental implants done after losing two teeth in an accident. Dr. Malhotra used 3D digital planning and the implants fit perfectly — my friends don't even know they're not real teeth. I can eat normally, smile confidently. SmileCare changed my life, literally.</p>
+        <div class="testi-author">
+          <div class="testi-avatar">VJ</div>
+          <div>
+            <div class="testi-name">Vikram Joshi</div>
+            <div class="testi-treatment">Dental Implants (2 Teeth)</div>
+          </div>
+        </div>
+      </div>
+      <div class="testi-card reveal reveal-delay-2">
+        <div class="testi-quote">"</div>
+        <div class="testi-stars">★★★★★</div>
+        <p class="testi-text">Extremely professional clinic. The waiting area is clean, air-conditioned and calming. No aggressive sales tactics — they tell you exactly what you need and the cost upfront. I've been bringing my whole family here for 4 years now. Best dental and eye clinic in Indore, hands down.</p>
+        <div class="testi-author">
+          <div class="testi-avatar">DG</div>
+          <div>
+            <div class="testi-name">Divya Gupta</div>
+            <div class="testi-treatment">Family Patient (4 Years)</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== GALLERY ===== -->
+<section class="gallery" id="gallery">
+  <div class="container">
+    <div class="section-header reveal">
+      <span class="tag">Our Clinic</span>
+      <h2 class="section-title">A Space Designed for Your Comfort</h2>
+      <p class="section-subtitle">Walk into a clinic that feels calm, clean, and reassuring — because your experience matters as much as your treatment.</p>
+    </div>
+    <div class="gallery-grid">
+      <div class="gallery-item reveal">
+        <img src="https://images.unsplash.com/photo-1629909613654-28e377c37b09?auto=format&fit=crop&w=600&q=80" alt="Dental treatment room" loading="lazy" />
+        <div class="gallery-item-overlay"><span>Treatment Room</span></div>
+      </div>
+      <div class="gallery-item reveal reveal-delay-1">
+        <img src="https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?auto=format&fit=crop&w=600&q=80" alt="Modern dental chair" loading="lazy" />
+        <div class="gallery-item-overlay"><span>Modern Dental Chair</span></div>
+      </div>
+      <div class="gallery-item reveal reveal-delay-2">
+        <img src="https://images.unsplash.com/photo-1516549655169-df83a0774514?auto=format&fit=crop&w=600&q=80" alt="Eye examination equipment" loading="lazy" />
+        <div class="gallery-item-overlay"><span>Eye Examination Suite</span></div>
+      </div>
+      <div class="gallery-item reveal">
+        <img src="https://images.unsplash.com/photo-1551601651-2a8555f1a136?auto=format&fit=crop&w=600&q=80" alt="Eye surgery preparation" loading="lazy" />
+        <div class="gallery-item-overlay"><span>Laser Vision Correction Suite</span></div>
+      </div>
+      <div class="gallery-item reveal reveal-delay-1">
+        <img src="https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?auto=format&fit=crop&w=600&q=80" alt="Clean reception area" loading="lazy" />
+        <div class="gallery-item-overlay"><span>Reception & Waiting Area</span></div>
+      </div>
+      <div class="gallery-item reveal reveal-delay-2">
+        <img src="https://images.unsplash.com/photo-1607619056574-7b8d3ee536b2?auto=format&fit=crop&w=600&q=80" alt="Sterilization unit" loading="lazy" />
+        <div class="gallery-item-overlay"><span>Sterilization & Hygiene Unit</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== FACILITIES ===== -->
+<section class="facilities" id="facilities">
+  <div class="container">
+    <div class="section-header reveal">
+      <span class="tag">Infrastructure</span>
+      <h2 class="section-title">World-Class Facilities</h2>
+      <p class="section-subtitle">We've invested in the best equipment so you receive accurate diagnoses, faster procedures, and more comfortable outcomes.</p>
+    </div>
+    <div class="facilities-grid">
+      <div class="facility-card reveal">
+        <div class="facility-icon">🩻</div>
+        <h3>Digital Dental X-Ray</h3>
+        <p>RVG (Radiovisiography) digital X-rays provide instant, high-resolution images with 90% less radiation than traditional X-rays. Better diagnosis, faster treatment planning.</p>
+      </div>
+      <div class="facility-card reveal reveal-delay-1">
+        <div class="facility-icon">🧼</div>
+        <h3>Class-B Sterilization</h3>
+        <p>All instruments are sterilized using Class-B autoclaves with biological indicators tested weekly. Single-use disposables wherever applicable. Strict infection control protocols followed.</p>
+      </div>
+      <div class="facility-card reveal reveal-delay-2">
+        <div class="facility-icon">❄️</div>
+        <h3>AC Comfortable Rooms</h3>
+        <p>All treatment rooms are fully air-conditioned, maintained at 22°C, with soft lighting and calming décor. Entertainment screens available to keep patients relaxed during procedures.</p>
+      </div>
+      <div class="facility-card reveal reveal-delay-3">
+        <div class="facility-icon">🚨</div>
+        <h3>Emergency Dental Care</h3>
+        <p>Toothache at midnight? Broken tooth before a wedding? We provide same-day emergency dental appointments. Call our emergency line and get seen within 2 hours, 7 days a week.</p>
+      </div>
+      <div class="facility-card reveal">
+        <div class="facility-icon">🔬</div>
+        <h3>OCT Eye Scanner</h3>
+        <p>Optical Coherence Tomography (OCT) provides non-invasive, high-resolution cross-sectional images of the retina, detecting conditions like macular degeneration years before symptoms appear.</p>
+      </div>
+      <div class="facility-card reveal reveal-delay-1">
+        <div class="facility-icon">💻</div>
+        <h3>3D Smile Design</h3>
+        <p>Using digital intraoral scanners and smile simulation software, see a virtual preview of your smile after treatment — before you commit. Perfect for implants, veneers, and orthodontics.</p>
+      </div>
+      <div class="facility-card reveal reveal-delay-2">
+        <div class="facility-icon">♿</div>
+        <h3>Wheelchair Accessible</h3>
+        <p>Our clinic is fully accessible for patients with mobility challenges, including ramp entry, accessible washrooms, and wheelchair-compatible dental chairs for elderly and differently-abled patients.</p>
+      </div>
+      <div class="facility-card reveal reveal-delay-3">
+        <div class="facility-icon">💳</div>
+        <h3>Flexible Payment & EMI</h3>
+        <p>We accept all major cards, UPI, and net banking. EMI options available on treatments above ₹5,000 through our banking partners — no-cost EMI up to 12 months on select procedures.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== APPOINTMENT ===== -->
+<section class="appointment" id="appointment">
+  <div class="container">
+    <div class="appointment-wrap">
+      <div class="appointment-info reveal">
+        <span class="tag">Book Now</span>
+        <h2>Ready for a Healthier Smile & Clearer Vision?</h2>
+        <p>Taking the first step is the hardest part. Fill in the form and our team will call you back within 2 hours to confirm your appointment at a time that suits you. No waiting, no fuss.</p>
+        <div class="appointment-benefits">
+          <div class="appointment-benefit">Free first consultation for new patients</div>
+          <div class="appointment-benefit">Flexible appointments — morning, afternoon & evening</div>
+          <div class="appointment-benefit">No surprise charges — transparent treatment plans</div>
+          <div class="appointment-benefit">Reminders via WhatsApp before your appointment</div>
+          <div class="appointment-benefit">Dedicated reception staff to assist you</div>
+        </div>
+      </div>
+      <div class="appointment-form-card reveal reveal-delay-1">
+        <h3>📅 Book Your Appointment</h3>
+        <form class="appt-form" onsubmit="handleApptForm(event)">
+          <div class="form-group">
+            <input type="text" placeholder="Full Name *" required />
+          </div>
+          <div class="form-group">
+            <input type="tel" placeholder="Phone Number *" required />
+          </div>
+          <div class="form-group">
+            <input type="email" placeholder="Email Address (optional)" />
+          </div>
+          <div class="form-group">
+            <input type="date" required title="Preferred Date" />
+          </div>
+          <div class="form-group">
+            <select required>
+              <option value="">Select Service / Department</option>
+              <optgroup label="Dental Services">
+                <option>Dental Consultation</option>
+                <option>Root Canal Treatment</option>
+                <option>Teeth Whitening</option>
+                <option>Dental Implants</option>
+                <option>Braces / Clear Aligners</option>
+                <option>Tooth Extraction</option>
+                <option>Dental Cleaning & Scaling</option>
+              </optgroup>
+              <optgroup label="Eye Care Services">
+                <option>Eye Consultation</option>
+                <option>LASIK Surgery Evaluation</option>
+                <option>Spectacle Prescription</option>
+                <option>Cataract Evaluation</option>
+                <option>Retina Check-Up</option>
+              </optgroup>
+            </select>
+          </div>
+          <div class="form-group">
+            <textarea placeholder="Any additional notes or concerns? (optional)"></textarea>
+          </div>
+          <button type="submit" class="btn appt-submit">Confirm Appointment Request →</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== LOCATION ===== -->
+<section class="location" id="location">
+  <div class="container">
+    <div class="section-header reveal" style="margin-bottom:2rem">
+      <span class="tag">Find Us</span>
+      <h2 class="section-title">Visit SmileCare Clinic</h2>
+    </div>
+    <div class="location-grid">
+      <div class="map-wrap reveal">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d117781.43703027097!2d75.78772831679691!3d22.719567399999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3962fcad1b410ddb%3A0x96ec4da356240f4!2sIndore%2C%20Madhya%20Pradesh!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin"
+          allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="SmileCare Clinic Location - Indore">
+        </iframe>
+      </div>
+      <div class="reveal reveal-delay-1">
+        <div class="location-info">
+          <h2>Get In Touch</h2>
+          <div class="contact-items">
+            <div class="contact-item">
+              <div class="contact-item-icon">📍</div>
+              <div class="contact-item-text">
+                <strong>Address</strong>
+                <span>42, Palasia Square, AB Road,<br/>Indore – 452001, Madhya Pradesh</span>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-item-icon">📞</div>
+              <div class="contact-item-text">
+                <strong>Phone</strong>
+                <span><a href="tel:+919826030762" style="color:var(--primary)">+91 99933 84941</a></span>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-item-icon">✉️</div>
+              <div class="contact-item-text">
+                <strong>Email</strong>
+                <span>appointments@smilecareclinic.in</span>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-item-icon">💬</div>
+              <div class="contact-item-text">
+                <strong>WhatsApp</strong>
+                <span><a href="https://wa.me/919826030762" target="_blank" style="color:var(--primary)">Chat with us on WhatsApp</a></span>
+              </div>
+            </div>
+          </div>
+
+          <table class="hours-table">
+            <thead>
+              <tr>
+                <th>Day</th>
+                <th>Dental</th>
+                <th>Eye Care</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>Mon – Fri</strong></td>
+                <td>9:00 AM – 8:00 PM</td>
+                <td>10:00 AM – 7:00 PM</td>
+              </tr>
+              <tr>
+                <td><strong>Saturday</strong></td>
+                <td>9:00 AM – 6:00 PM</td>
+                <td>10:00 AM – 5:00 PM</td>
+              </tr>
+              <tr>
+                <td><strong>Sunday</strong></td>
+                <td colspan="2">By Appointment Only <span class="open-badge">Open</span></td>
+              </tr>
+            </tbody>
+          </table>
+
+          <div style="margin-top:1.5rem">
+            <a href="https://www.google.com/maps/search/dental+eye+clinic+indore" target="_blank" class="btn btn-outline" style="font-size:0.9rem; padding:10px 22px;">📍 Get Directions</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== FOOTER ===== -->
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="logo">😊 Dental Clinic and Implant Center is determined to Clinic</div>
+        <p>Indore's trusted multi-specialty dental and eye clinic. Combining advanced technology, compassionate care, and transparent pricing to give every patient the healthy smile and clear vision they deserve.</p>
+        <div class="social-links">
+          <a href="#" class="social-icon" aria-label="Facebook">
+            <svg viewBox="0 0 24 24"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg>
+          </a>
+          <a href="#" class="social-icon" aria-label="Instagram">
+            <svg viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z" fill="none" stroke="#fff" stroke-width="1.5"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5" stroke="#fff" stroke-width="2"/></svg>
+          </a>
+          <a href="https://wa.me/919826030762" target="_blank" class="social-icon" aria-label="WhatsApp">
+            <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+          </a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Dental Services</h4>
+        <ul>
+          <li><a href="#services">Root Canal</a></li>
+          <li><a href="#services">Teeth Whitening</a></li>
+          <li><a href="#services">Dental Implants</a></li>
+          <li><a href="#services">Braces & Aligners</a></li>
+          <li><a href="#services">Tooth Extraction</a></li>
+          <li><a href="#services">Scaling & Cleaning</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Eye Care Services</h4>
+        <ul>
+          <li><a href="#services">LASIK Surgery</a></li>
+          <li><a href="#services">Eye Consultation</a></li>
+          <li><a href="#services">Cataract Surgery</a></li>
+          <li><a href="#services">Retina Check-Up</a></li>
+          <li><a href="#doctors">Our Doctors</a></li>
+          <li><a href="#facilities">Our Facilities</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Visit Us</h4>
+        <ul>
+          <li><a href="#">42, Palasia Square, AB Road</a></li>
+          <li><a href="#">Indore – 452001, MP</a></li>
+          <li><a href="tel:+919826030762">+91 99933 84941</a></li>
+          <li><a href="mailto:appointments@smilecareclinic.in">appointments@smilecareclinic.in</a></li>
+          <li><a href="#appointment">📅 Book Appointment</a></li>
+          <li><a href="https://wa.me/919826030762" target="_blank">💬 WhatsApp Us</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2025 Dental Clinic and Implant Center is determined to Clinic, Indore. All rights reserved.</p>
+      <span class="demo-tag">✨ Demo by VedamVision</span>
+    </div>
+  </div>
+</footer>
+
+<!-- ===== WHATSAPP FLOAT ===== -->
+<a href="https://wa.me/919826030762" class="whatsapp-float" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
+  <span class="wa-tooltip">Chat with us!</span>
+  <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+</a>
+
+<!-- ===== JAVASCRIPT ===== -->
+<script>
+  // Hamburger menu
+  const hamburger = document.getElementById('hamburger');
+  const mobileMenu = document.getElementById('mobileMenu');
+  hamburger.addEventListener('click', () => {
+    mobileMenu.classList.toggle('open');
+  });
+  // Close mobile menu on link click
+  mobileMenu.querySelectorAll('a').forEach(a => {
+    a.addEventListener('click', () => mobileMenu.classList.remove('open'));
+  });
+
+  // Service tabs
+  document.querySelectorAll('.tab-btn').forEach(btn => {
+    btn.addEventListener('click', () => {
+      document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+      const tab = btn.dataset.tab;
+      document.querySelectorAll('.services-panel').forEach(p => p.classList.remove('active'));
+      document.getElementById('tab-' + tab).classList.add('active');
+      // Re-trigger reveal for newly shown panel
+      document.querySelectorAll('#tab-' + tab + ' .reveal').forEach(el => {
+        el.classList.remove('visible');
+        setTimeout(() => observer.observe(el), 50);
+      });
+    });
+  });
+
+  // Scroll reveal
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(e => {
+      if (e.isIntersecting) {
+        e.target.classList.add('visible');
+        observer.unobserve(e.target);
+      }
+    });
+  }, { threshold: 0.08 });
+  document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+
+  // Form handlers
+  function handleHeroForm(e) {
+    e.preventDefault();
+    alert('✅ Appointment request received!\nOur team will call you within 2 hours to confirm.\n\nThank you for choosing SmileCare! 😊');
+    e.target.reset();
+  }
+  function handleApptForm(e) {
+    e.preventDefault();
+    alert('✅ Appointment booked successfully!\nWe\'ll send a confirmation on WhatsApp shortly.\n\nSee you at SmileCare! 😊');
+    e.target.reset();
+  }
+
+  // Set min date for date inputs to today
+  const today = new Date().toISOString().split('T')[0];
+  document.querySelectorAll('input[type="date"]').forEach(d => d.setAttribute('min', today));
+</script>
+</body>
+</html>
