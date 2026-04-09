@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Treasure The Wellness Spa & Family Salon — Indore's Most Treasured Wellness Experience</title>
+<meta name="description" content="Premium spa treatments in Indore. Full body massage, Thai massage, deep tissue, couple spa & family salon services. Book your session today.">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+:root{--cream:#f5f0eb;--brown:#8b7355;--gold:#c4a882;--dark:#2c2418;--light:#faf7f4;--accent:#a0845e}
+body{font-family:'Inter',sans-serif;color:#2c2418;background:var(--cream);overflow-x:hidden}
+h1,h2,h3{font-family:'Playfair Display',serif}
+
+/* Banner */
+.top-banner{position:fixed;top:0;left:0;right:0;background:var(--brown);color:#fff;text-align:center;padding:10px;font-size:13px;z-index:1000;font-weight:500}
+.top-banner a{color:#f5d9b0;text-decoration:underline}
+
+/* Nav */
+nav{position:fixed;top:38px;left:0;right:0;background:rgba(245,240,235,.95);backdrop-filter:blur(12px);z-index:900;padding:1rem 2rem;display:flex;justify-content:space-between;align-items:center;border-bottom:1px solid rgba(139,115,85,.1)}
+nav .brand{font-family:'Playfair Display',serif;font-size:1.4rem;font-weight:700;color:var(--dark)}
+nav .cta-btn{background:var(--brown);color:#fff;padding:10px 24px;border:none;border-radius:8px;font-size:14px;font-weight:600;cursor:pointer;text-decoration:none;transition:all .3s}
+nav .cta-btn:hover{background:var(--dark)}
+
+/* Hero */
+.hero{min-height:100vh;display:flex;align-items:center;justify-content:center;text-align:center;padding:8rem 2rem 4rem;position:relative;background:linear-gradient(135deg,var(--cream) 0%,#ebe3d9 100%)}
+.hero h1{font-size:clamp(2.5rem,6vw,4.5rem);line-height:1.1;margin-bottom:1.5rem;color:var(--dark)}
+.hero h1 span{color:var(--gold)}
+.hero p{font-size:1.15rem;color:#6b5b4a;max-width:600px;margin:0 auto 2rem;line-height:1.7}
+.hero .btns{display:flex;gap:1rem;justify-content:center;flex-wrap:wrap}
+.btn-primary{background:var(--brown);color:#fff;padding:14px 32px;border:none;border-radius:8px;font-size:15px;font-weight:600;cursor:pointer;text-decoration:none;transition:all .3s}
+.btn-primary:hover{background:var(--dark);transform:translateY(-2px)}
+.btn-outline{border:2px solid var(--brown);color:var(--brown);padding:12px 30px;border-radius:8px;font-size:15px;font-weight:600;cursor:pointer;text-decoration:none;transition:all .3s;background:transparent}
+.btn-outline:hover{background:var(--brown);color:#fff}
+
+/* Services */
+.services{padding:5rem 2rem;background:var(--light)}
+.section-label{font-size:.8rem;letter-spacing:.15em;text-transform:uppercase;color:var(--gold);font-weight:600;margin-bottom:.5rem;text-align:center}
+.section-title{font-size:clamp(1.8rem,4vw,3rem);text-align:center;margin-bottom:3rem;color:var(--dark)}
+.services-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:1.5rem;max-width:1100px;margin:0 auto}
+.service-card{background:#fff;border-radius:16px;padding:2rem;text-align:center;border:1px solid rgba(139,115,85,.1);transition:all .3s}
+.service-card:hover{transform:translateY(-4px);box-shadow:0 12px 30px rgba(139,115,85,.12)}
+.service-card .icon{font-size:2.5rem;margin-bottom:1rem}
+.service-card h3{font-size:1.2rem;margin-bottom:.5rem;color:var(--dark)}
+.service-card p{color:#7a6b5a;font-size:.9rem;line-height:1.6}
+
+/* About */
+.about{padding:5rem 2rem;max-width:1100px;margin:0 auto;display:grid;grid-template-columns:1fr 1fr;gap:3rem;align-items:center}
+.about img{width:100%;height:400px;object-fit:cover;border-radius:20px}
+.about-text h2{font-size:2.2rem;margin-bottom:1rem;color:var(--dark)}
+.about-text p{color:#6b5b4a;line-height:1.8;margin-bottom:1rem;font-size:1rem}
+@media(max-width:768px){.about{grid-template-columns:1fr}}
+
+/* Gallery */
+.gallery{padding:5rem 2rem;background:var(--light)}
+.gallery-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:1rem;max-width:1100px;margin:0 auto}
+.gallery-grid img{width:100%;height:250px;object-fit:cover;border-radius:12px;transition:transform .5s}
+.gallery-grid img:hover{transform:scale(1.03)}
+
+/* Contact */
+.contact{padding:5rem 2rem;text-align:center}
+.contact-info{display:flex;gap:2rem;justify-content:center;flex-wrap:wrap;margin-top:2rem;max-width:800px;margin-left:auto;margin-right:auto}
+.contact-card{background:var(--light);padding:2rem;border-radius:16px;flex:1;min-width:200px;border:1px solid rgba(139,115,85,.1)}
+.contact-card .icon{font-size:2rem;margin-bottom:.5rem}
+.contact-card h3{font-size:1rem;color:var(--dark);margin-bottom:.5rem}
+.contact-card p{color:#6b5b4a;font-size:.9rem}
+.contact-card a{color:var(--brown);text-decoration:none;font-weight:600}
+
+/* Footer */
+footer{background:var(--dark);color:#a09080;padding:2rem;text-align:center;font-size:.85rem}
+footer a{color:var(--gold);text-decoration:none}
+
+/* WhatsApp float */
+.wa-float{position:fixed;bottom:24px;right:24px;background:#25d366;width:60px;height:60px;border-radius:50%;display:flex;align-items:center;justify-content:center;z-index:999;box-shadow:0 4px 15px rgba(37,211,102,.4);transition:transform .3s;text-decoration:none}
+.wa-float:hover{transform:scale(1.1)}
+.wa-float svg{width:32px;height:32px;fill:#fff}
+</style>
+</head>
+<body>
+
+<div class="top-banner">🌟 This website is available for you! Built by <a href="https://new.vedamvision.com">Vedam Vision</a> — Contact: <a href="tel:+918889121215">+91 8889121215</a></div>
+
+<nav>
+<div class="brand">Treasure Wellness</div>
+<a href="tel:07697907684" class="cta-btn">Book Your Session</a>
+</nav>
+
+<!-- Hero -->
+<section class="hero">
+<div>
+<p class="section-label">Premium Spa & Family Salon</p>
+<h1>Indore's Most <span>Treasured</span> Wellness Experience</h1>
+<p>Step into a world of relaxation. Premium spa treatments, expert therapists, and an atmosphere designed to restore your mind and body.</p>
+<div class="btns">
+<a href="tel:07697907684" class="btn-primary">📞 Book Your Session</a>
+<a href="https://wa.me/917697907684" class="btn-outline">💬 WhatsApp Us</a>
+</div>
+</div>
+</section>
+
+<!-- Services -->
+<section class="services">
+<p class="section-label">Our Services</p>
+<h2 class="section-title">Treatments Designed for You</h2>
+<div class="services-grid">
+<div class="service-card"><div class="icon">💆</div><h3>Full Body Massage</h3><p>Complete relaxation from head to toe. Our skilled therapists use techniques that release deep tension and restore your energy.</p></div>
+<div class="service-card"><div class="icon">🧘</div><h3>Thai Massage</h3><p>Ancient healing art combining acupressure, stretching, and assisted yoga. Leave feeling taller, looser, and completely renewed.</p></div>
+<div class="service-card"><div class="icon">💪</div><h3>Deep Tissue Massage</h3><p>Targeted pressure on chronic muscle tension. Perfect for athletes, desk workers, and anyone carrying stress in their body.</p></div>
+<div class="service-card"><div class="icon">💑</div><h3>Couple Spa</h3><p>Share the experience with someone special. Side-by-side treatments in a private setting for the perfect bonding experience.</p></div>
+<div class="service-card"><div class="icon">✂️</div><h3>Family Salon</h3><p>Haircuts, styling, facials, and grooming for the whole family. Walk in looking good, walk out looking great.</p></div>
+<div class="service-card"><div class="icon">🌿</div><h3>Aromatherapy</h3><p>Essential oil treatments that calm the mind and heal the body. Custom blends matched to what you need most right now.</p></div>
+</div>
+</section>
+
+<!-- About -->
+<section class="about">
+<img src="https://images.unsplash.com/photo-1544161515-4ab6ce6db874?w=800&auto=format&fit=crop" alt="Spa treatment" loading="lazy">
+<div class="about-text">
+<p class="section-label">About Us</p>
+<h2>Where Relaxation Meets Excellence</h2>
+<p>Treasure The Wellness Spa isn't just another spa in Indore. We built this place because we believe everyone deserves a space where they can truly let go. No rushing, no cutting corners — just genuine care and expert hands.</p>
+<p>Our therapists bring years of training in Thai, Swedish, and deep tissue techniques. Every session is tailored to you, because no two bodies carry stress the same way.</p>
+<p><strong>📍 109, First Floor, Bombay Trade Centre, Indore</strong></p>
+</div>
+</section>
+
+<!-- Gallery -->
+<section class="gallery">
+<p class="section-label">Gallery</p>
+<h2 class="section-title">Our Space</h2>
+<div class="gallery-grid">
+<img src="https://images.unsplash.com/photo-1540555700478-4be289fbec6d?w=600&auto=format&fit=crop" alt="Spa ambiance" loading="lazy">
+<img src="https://images.unsplash.com/photo-1596178065887-1198b6148b2b?w=600&auto=format&fit=crop" alt="Hot stone treatment" loading="lazy">
+<img src="https://images.unsplash.com/photo-1600334089648-b0d9d3028eb2?w=600&auto=format&fit=crop" alt="Spa treatment room" loading="lazy">
+</div>
+</section>
+
+<!-- Contact -->
+<section class="contact">
+<p class="section-label">Get in Touch</p>
+<h2 class="section-title">Book Your Session Today</h2>
+<div class="contact-info">
+<div class="contact-card"><div class="icon">📞</div><h3>Call Us</h3><p><a href="tel:07697907684">076 9790 7684</a></p></div>
+<div class="contact-card"><div class="icon">📧</div><h3>Email</h3><p><a href="mailto:treasurethewellness@gmail.com">treasurethewellness@gmail.com</a></p></div>
+<div class="contact-card"><div class="icon">📍</div><h3>Visit Us</h3><p>109, First Floor, Bombay Trade Centre, Indore, MP 452010</p></div>
+<div class="contact-card"><div class="icon">📱</div><h3>Instagram</h3><p><a href="https://instagram.com/treasurethewellness_spa">@treasurethewellness_spa</a></p></div>
+</div>
+</section>
+
+<footer>
+<p>© 2026 Treasure The Wellness Spa & Family Salon | Website designed by <a href="https://new.vedamvision.com">Vedam Vision</a></p>
+</footer>
+
+<a href="https://wa.me/918889121215?text=Hi%20I%20am%20interested%20in%20getting%20a%20website%20like%20this%20for%20my%20business" class="wa-float" title="Chat with Vedam Vision">
+<svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.625.846 5.059 2.284 7.034L.789 23.492a.5.5 0 00.611.611l4.458-1.495A11.943 11.943 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-2.352 0-4.554-.723-6.382-1.96l-.446-.31-2.893.97.97-2.893-.31-.446A9.935 9.935 0 012 12C2 6.486 6.486 2 12 2s10 4.486 10 10-4.486 10-10 10z"/></svg>
+</a>
+
+</body>
+</html>
